@@ -9,7 +9,7 @@ import {map, startWith} from 'rxjs/operators';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent implements OnInit  {
-  date = new FormControl(new Date());
+  date = new FormControl({disabled: true, value: new Date()});
   caseNo = new FormControl('', [Validators.required]);
   safetyReport = new FormControl();
   patientId = new FormControl('', [Validators.required]);
