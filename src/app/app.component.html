@@ -30,7 +30,7 @@
         <mat-form-field>
           <input matInput [max]="maxDate" [matDatepicker]="pickerTo" placeholder="Patient DOB" disabled>
           <mat-datepicker-toggle matSuffix [for]="pickerTo"></mat-datepicker-toggle>
-          <mat-datepicker #pickerTo disabled="false"></mat-datepicker>
+          <mat-datepicker #pickerTo disabled="false" touchUi></mat-datepicker>
         </mat-form-field>
         <mat-form-field appearance="outline">
         <mat-label>Drug Name</mat-label>
