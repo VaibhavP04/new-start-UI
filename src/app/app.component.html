@@ -6,70 +6,93 @@
 
   <mat-card>
     <mat-card-content fxLayout="column" fxLayoutGap="30px">
-      <div fxLayout="row" fxLayoutAlign="space-between start">
-        <mat-form-field>
-          <input matInput [matDatepicker]="picker" placeholder="Date of Creation" [formControl]="date">
-          <mat-datepicker-toggle matSuffix [for]="picker" disabled></mat-datepicker-toggle>
-          <mat-datepicker #picker></mat-datepicker>
-        </mat-form-field>
-        <mat-form-field appearance="outline">
-          <mat-label>Case No:</mat-label>
-          <input #input matInput maxlength="20" [formControl]="caseNo" placeholder="Case No" required>
-          <mat-hint align="end">{{input.value?.length || 0}}/20</mat-hint>
-        </mat-form-field>
-        <mat-form-field appearance="outline">
-          <mat-label>Safteyreport ID</mat-label>
-          <input matInput maxlength="20" [formControl]="safetyReport" placeholder="Safteyreport ID">
-        </mat-form-field>
-        <mat-form-field appearance="outline">
+      <mat-accordion>
+        <mat-expansion-panel (opened)="panelOpenState = true"  (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Patient Details
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+      <div fxLayout="row" fxLayoutAlign="start" fxLayoutGap="30px">
+        <mat-form-field >
           <mat-label>Patient ID</mat-label>
           <input matInput type="number" [formControl]="patientId" placeholder="Patient ID" required>
         </mat-form-field>
-      </div>
-      <div fxLayout="row" fxLayoutAlign="space-between start">
-        <mat-form-field>
+         <mat-form-field>
           <input matInput [max]="maxDate" [matDatepicker]="pickerTo" placeholder="Patient DOB" disabled>
           <mat-datepicker-toggle matSuffix [for]="pickerTo"></mat-datepicker-toggle>
-          <mat-datepicker #pickerTo disabled="false" touchUi></mat-datepicker>
-        </mat-form-field>
-        <mat-form-field appearance="outline">
-        <mat-label>Drug Name</mat-label>
-        <textarea matInput placeholder="Drug Name" [formControl]="drugName" maxlength="255" required></textarea>
-        <mat-hint align="end">{{input.value?.length || 0}}/255</mat-hint>
-        </mat-form-field>
-        <mat-form-field>
-          <input type="text" placeholder="Reaction" matInput [formControl]="reaction" [matAutocomplete]="auto" required>
-          <mat-label>Reaction</mat-label>
-          <mat-autocomplete #auto="matAutocomplete">
-            <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
-              {{option}}
-            </mat-option>
-          </mat-autocomplete>
-        </mat-form-field>
-      <mat-form-field >
-        <mat-label>Primary Reporter</mat-label>
-        <mat-select>
-          <mat-option *ngFor="let report of reports" [value]="report">
-            {{report}}
-          </mat-option>
-        </mat-select>
-      </mat-form-field>
-      </div>
-      <div fxLayout="row" fxLayoutAlign="space-evenly start">
-      <mat-form-field>
-          <mat-label>Case Source</mat-label>
-          <mat-select>
-            <mat-option *ngFor="let source of sources" [value]="source">
-              {{source}}
-            </mat-option>
-          </mat-select>
-      </mat-form-field>
-      <mat-form-field>
-          <input matInput [max]="maxDate" [matDatepicker]="pickerThree" placeholder=" Date of Event occurred" disabled>
-          <mat-datepicker-toggle matSuffix [for]="pickerThree"></mat-datepicker-toggle>
-          <mat-datepicker #pickerThree disabled="false"></mat-datepicker>
+          <mat-datepicker #pickerTo disabled="false"></mat-datepicker>
         </mat-form-field>
       </div>
+        </mat-expansion-panel>
+      </mat-accordion>
+      <mat-accordion>
+        <mat-expansion-panel (opened)="panelOpenState = true"  (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            Case Details
+          </mat-expansion-panel-header>
+          <div fxLayout="row" fxLayoutAlign="start" fxLayoutGap="30px">
+            <mat-form-field >
+              <mat-label>Case No:</mat-label>
+              <input #input matInput maxlength="20" [formControl]="caseNo" placeholder="Case No" required>
+              <mat-hint align="end">{{input.value?.length || 0}}/20</mat-hint>
+            </mat-form-field>
+             <mat-form-field>
+                <mat-label>Case Source</mat-label>
+                <mat-select>
+                  <mat-option *ngFor="let source of sources" [value]="source">
+                    {{source}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+          </div>
+        </mat-expansion-panel>
+      </mat-accordion>
+      <mat-accordion>
+         <mat-expansion-panel (opened)="panelOpenState = true"  (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            General Information
+          </mat-expansion-panel-header>
+           <div fxLayout="row" fxLayoutAlign="space-between start">
+             <mat-form-field>
+              <input matInput [matDatepicker]="picker" placeholder="Date of Creation" [formControl]="date">
+              <mat-datepicker-toggle matSuffix [for]="picker" disabled></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+            <mat-form-field >
+              <mat-label>Safteyreport ID</mat-label>
+              <input matInput maxlength="20" [formControl]="safetyReport" placeholder="Safteyreport ID">
+            </mat-form-field>	
+             <mat-form-field >
+                <mat-label>Drug Name</mat-label>
+                <textarea matInput placeholder="Drug Name" [formControl]="drugName" maxlength="255" required></textarea>
+                <mat-hint align="end">{{input.value?.length || 0}}/255</mat-hint>
+              </mat-form-field>
+              <mat-form-field>
+                  <input type="text" placeholder="Reaction" matInput [formControl]="reaction" [matAutocomplete]="auto" required>
+                  <mat-label>Reaction</mat-label>
+                  <mat-autocomplete #auto="matAutocomplete">
+                    <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+                      {{option}}
+                    </mat-option>
+                  </mat-autocomplete>
+              </mat-form-field>
+              <mat-form-field >
+                <mat-label>Primary Reporter</mat-label>
+                <mat-select>
+                  <mat-option *ngFor="let report of reports" [value]="report">
+                    {{report}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+              <mat-form-field>
+                <input matInput [max]="maxDate" [matDatepicker]="pickerThree" placeholder=" Date of Event occurred" disabled>
+                <mat-datepicker-toggle matSuffix [for]="pickerThree"></mat-datepicker-toggle>
+                <mat-datepicker #pickerThree disabled="false"></mat-datepicker>
+              </mat-form-field>
+           </div>
+         </mat-expansion-panel>
+      </mat-accordion>
     </mat-card-content>
   </mat-card>
 </div>

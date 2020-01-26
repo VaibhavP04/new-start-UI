@@ -9,6 +9,7 @@ import {map, startWith} from 'rxjs/operators';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent implements OnInit  {
+  panelOpenState = false;
   date = new FormControl({disabled: true, value: new Date()});
   caseNo = new FormControl('', [Validators.required]);
   safetyReport = new FormControl();
