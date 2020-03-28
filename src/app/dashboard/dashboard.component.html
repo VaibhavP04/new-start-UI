@@ -1,0 +1,100 @@
+<header>
+  <nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="javascript:void(0);">Pharmasoft</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="javascript:void(0);">Auto</a></li>
+          <li><a href="javascript:void(0);">0</a></li>
+          <li><a href="javascript:void(0);"><fa-icon class="question" [icon]="faQuestionCircle"></fa-icon></a></li>
+          <li><a href="javascript:void(0);"><fa-icon class="exclamation" [icon]="faExclamationCircle"></fa-icon></a></li>
+          <li><a href="javascript:void(0);"><fa-icon class="signout" [icon]="faSignOutAlt"></fa-icon></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <nav class="navbar navbar-links navbar-default" role="navigation">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Case</a></li>
+        <li><a href="#">Record</a></li>
+        <li class="active"><a href="#">Forms</a></li>
+        <li><a href="#">Dictionary</a></li>
+        <li><a href="#">Submission and tracking</a></li>
+      </ul>
+    </div>
+    <div class="nav-links-icons collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><fa-icon class="folder-open" [icon]="faFolderOpen"></fa-icon></li>
+        <li><fa-icon class="save" [icon]="faSave"></fa-icon></li>
+        <li><fa-icon class="close" [icon]="faTimes"></fa-icon></li>
+      </ul>
+    </div>
+    <div class="nav-links" *ngIf="!toggle">
+      <div class="clearAfter pullLeft">
+        <ul>
+          <li>
+            <a><span>1</span> Case</a>
+            <ul class="remove-padding">
+              <li><a>AER Progress</a></li>
+              <li><a>Case Intake</a></li>
+              <li><a (click)="switchToTabs()">AER Registration</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a><span>2</span> Assessment</a>
+          </li>
+        </ul>
+      </div>
+      <div class="clearAfter pullLeft">
+        <ul>
+          <li>
+            <a><span>3</span> Full Data Entry</a>
+            <ul class="remove-padding">
+              <li><a>General</a></li>
+              <li><a>E2B(R3) From</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="clearAfter pullLeft">
+        <ul>
+          <li>
+            <a><span>5</span> Distribution List</a>
+            <ul class="remove-padding">
+              <li><a>Autority</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a><span>6</span> Affiliate Reporting</a>
+            <ul class="remove-padding">
+              <li><a>General</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a><span>7</span> Data</a>
+            <ul class="remove-padding">
+              <li><a>Lab Data Matrix</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div *ngIf="toggle">
+    <app-general></app-general>
+    <app-person></app-person>
+    <app-patient></app-patient>
+    <app-disease></app-disease>
+    <app-event></app-event>
+  </div>
+</header>

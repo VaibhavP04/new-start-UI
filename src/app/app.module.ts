@@ -4,15 +4,38 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { DashboardService } from './dashboard/dashboard.service';
+import { HttpClientModule } from '@angular/common/http';
+import { GeneralComponent } from './general/general.component';
+import { PersonComponent } from './person/person.component';
+import { PatientComponent } from './patient/patient.component';
+import { DiseaseComponent } from './disease/disease.component';
+import { EventComponent } from './event/event.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DashboardComponent,
+    GeneralComponent,
+    PersonComponent,
+    PatientComponent,
+    DiseaseComponent,
+    EventComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    FontAwesomeModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [DashboardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

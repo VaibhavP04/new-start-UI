@@ -1,0 +1,91 @@
+.navbar-default {
+  .navbar-brand{
+    color: #224167;
+  }
+}
+.navbar-links{
+  background: #fff;
+  border: 0;
+  .nav{
+    li{
+      &.active{
+        a{
+          background-color: #224167;
+          color: #fff;
+        }
+      }
+      a{
+        padding: 5px 10px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+.nav{
+  li{
+    a{
+      color: #000;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding-left: 10px;
+      padding-right: 10px;
+      fa-icon{
+        color:#224167;
+        font-size: 18px;
+      }
+    }
+  }
+}
+.nav-links-icons{
+  background: #224167;
+  li{
+    margin-right: 20px;
+    fa-icon{
+      font-size: 18px;
+      color: #fff;
+    }
+  }
+}
+
+.nav-links{
+  margin-top: 10px;
+  .pullLeft{
+    width: 20%;
+    float: left;
+    ul{
+      li{
+        list-style-type: none;
+        line-height: 25px;
+        a{
+          color: #ffa400;
+          font-weight: 500;
+          span{
+            background: #ffa400;
+            color: #fff;
+            padding: 3px 5px;
+          }
+        }
+        .remove-padding{
+          margin: 10px 0;
+          padding-left: 0;
+          li{
+            &:hover{
+              a {
+                background: #224167;
+                color: #fff;
+                padding: 5px;
+                text-decoration: none;
+                cursor: pointer;
+              }
+            }
+            a{
+              color: #000;
+              font-weight: normal;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

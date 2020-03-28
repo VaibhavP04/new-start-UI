@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
+
+.panel-title > a:before {
+  float: left;
+  font-family: FontAwesome;
+  content:"\f107";
+  padding-right: 5px;
+}
+.panel-title > a.collapsed:before {
+  float: left;
+  content:"\f106";
+}
+.input-group{
+  width: 100%;
+}
+
+.name-wrapper {
+  border: 1px solid #ccc;
+  margin: 20px 0;
+  padding: 10px 0;
+  .name-wrap{
+    position: relative;
+    top: -20px;
+    left: 30px;
+    width: 50px;
+    background: #224167;
+    color: #fff;
+    padding: 0 5px;
+    border-radius: 5px;
+    margin: 0;
+  }
+}
+
+.checkbox-inline{
+  margin-top: 25px;
+}
