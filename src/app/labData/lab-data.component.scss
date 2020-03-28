@@ -1,0 +1,33 @@
+.checkbox-inline-two{
+  margin-top: 0;
+  margin-left: 5px;
+}
+
+.coded-wrap{
+  > div {
+    margin-bottom: 10px;
+  }
+  .clearAfter {
+    clear: both;
+  }
+  label{
+    display: inline;
+    float: left;
+    width: 120px;
+  }
+  span{
+    display: inline;
+    float: left;
+    width: 90%;
+  }
+}
+
+.btn-group{
+  button{
+    color: #608fc4;
+    margin-right: 10px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}

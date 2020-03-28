@@ -2,6 +2,10 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
 
+a{
+  display: block;
+}
+
 .panel-title > a:before {
   float: left;
   font-family: FontAwesome;
@@ -31,8 +35,28 @@
     border-radius: 5px;
     margin: 0;
   }
+  .name-wrap-two{
+    position: relative;
+    top: -20px;
+    left: 30px;
+    width: 120px;
+    background: #224167;
+    color: #fff;
+    padding: 0 5px;
+    border-radius: 5px;
+    margin: 0;
+  }
 }
 
 .checkbox-inline{
   margin-top: 25px;
+}
+
+textarea{
+  width: 100%;
+}
+
+.panel-heading.header{
+  background: #608fc4;
+  color: #fff;
 }

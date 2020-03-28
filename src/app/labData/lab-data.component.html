@@ -1,0 +1,509 @@
+<div class="container-fluid">
+  <div class="panel-group" id="labData">
+    <div class="panel panel-default">
+      <div class="panel-heading header">
+        <h4 class="panel-title">
+          <a class="accordion-toggle" data-toggle="collapse" data-parent="#labData" href="#labDataOne">
+            Lab Data
+          </a>
+        </h4>
+      </div>
+      <div id="labDataOne" class="panel-collapse collapse in">
+        <div class="panel-body">
+          <div class="panel-group" id="labDataInner" *ngIf="showLabDataForms">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#labDataInner" href="#labDataInnerTab">
+                    Lab Data
+                  </a>
+                </h4>
+              </div>
+              <div id="labDataInnerTab" class="panel-collapse collapse in">
+                <div class="panel-body">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="input-group">
+                        <label>Laboratory</label>
+                        <input type=“text” required class="form-control"
+                          aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group">
+                        <label>Test Name</label>
+                        <input type=“text” required class="form-control"
+                          aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group">
+                        <label>Test Rank</label>
+                        <input type=“text” required class="form-control"
+                          aria-describedby="basic-addon1">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="input-group">
+                        <label>LLT Code</label>
+                        <input type=“text” required class="form-control"
+                          aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group">
+                        <label>PT Code</label>
+                        <input type=“text” required class="form-control"
+                          aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group">
+                        <label>Primary SOC Code</label>
+                        <input type=“text” required class="form-control"
+                          aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group">
+                        <label>Case SOC Code</label>
+                        <input type=“text” required class="form-control"
+                          aria-describedby="basic-addon1">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input-group">
+                        <label>&nbsp;</label>
+                        <input type=“text” required class="form-control"
+                          aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group">
+                        <label>&nbsp;</label>
+                        <input type=“text” required class="form-control"
+                          aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group">
+                        <label>&nbsp;</label>
+                        <input type=“text” required class="form-control"
+                          aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group">
+                        <label>&nbsp;</label>
+                        <input type=“text” required class="form-control"
+                          aria-describedby="basic-addon1">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="input-group">
+                        <label>MedDRA Version</label>
+                        <input type=“text” required class="form-control"
+                          aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group">
+                        <label>Test Date</label>
+                        <input type="date" required class="form-control"
+                          aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group">
+                        <label>Specimen ID</label>
+                        <input type=“text” required class="form-control"
+                          aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group my-group">
+                        <label>Unit Code</label>
+                        <select id="lunch" class="selectpicker form-control" data-live-search="true" title="Please select an option ...">
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                            <option>Option 4</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="input-group">
+                        <label>Test Code</label>
+                        <input type=“text” required class="form-control"
+                          aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group">
+                        <label>&nbsp;</label>
+                        <input type=“text” required class="form-control"
+                          aria-describedby="basic-addon1">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="input-group">
+                        <label>Test Date</label>
+                        <input type="date" required class="form-control"
+                          aria-describedby="basic-addon1">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="input-group">
+                        <label>Test Result</label>
+                        <input type=“text” required class="form-control"
+                          aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group">
+                        <label>&nbsp;</label>
+                        <input type=“text” required class="form-control"
+                          aria-describedby="basic-addon1">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="input-group">
+                        <label>Result Unit Text</label>
+                        <input type="date" required class="form-control"
+                          aria-describedby="basic-addon1">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="input-group">
+                        <label>Normal Value</label>
+                        <input type="date" required class="form-control"
+                          aria-describedby="basic-addon1">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row name-wrapper">
+                    <p class="name-wrap-two">Normal value</p>
+                    <div class="col-md-6">
+                      <div class="input-group">
+                        <label>Low</label>
+                        <input type=“text” required class="form-control"
+                          aria-describedby="basic-addon1">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input-group">
+                        <label>High</label>
+                        <input type=“text” required class="form-control"
+                          aria-describedby="basic-addon1">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row name-wrapper">
+                    <p class="name-wrap-two">Clinical Concern</p>
+                    <div class="col-md-6">
+                      <div class="input-group">
+                        <label>Lower Limit</label>
+                        <input type=“text” required class="form-control"
+                          aria-describedby="basic-addon1">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input-group">
+                        <label>Upper Limit</label>
+                        <input type=“text” required class="form-control"
+                          aria-describedby="basic-addon1">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="input-group my-group">
+                        <label>Classification</label>
+                        <select id="lunch" class="selectpicker form-control" data-live-search="true" title="Please select an option ...">
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                            <option>Option 4</option>
+                        </select>
+                      </div>
+                      <div class="input-group">
+                        <label>Comments</label>
+                        <textarea required class="form-control"
+                          aria-describedby="basic-addon1"></textarea>
+                      </div>
+                      <div class="input-group">
+                        <label>Result Unstructured Data</label>
+                        <textarea required class="form-control"
+                          aria-describedby="basic-addon1"></textarea>
+                      </div>
+                      <label>More Info</label>
+                      <div class="input-group">
+                        <label class="radio-inline">
+                          <input type="radio" name="optradio">Yes
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="optradio">No
+                        </label>
+                        <label class="checkbox-inline-two">
+                          <input type="checkbox" value="">Not relevant ?
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel-group" id="caseSOC" *ngIf="showLabDataForms">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#caseSOC" href="#caseSOCTab">
+                    Case SOC Hierarchy
+                  </a>
+                </h4>
+              </div>
+              <div id="caseSOCTab" class="panel-collapse collapse in">
+                <div class="panel-body">
+                  <div class="panel-group" id="asCoded">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#asCoded" href="#asCodedTab">
+                            As Coded
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="asCodedTab" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                          <div class="coded-wrap">
+                            <div>
+                              <label>SOC</label>
+                              <span><input type=“text” required class="form-control"
+                                aria-describedby="basic-addon1"></span>
+                            </div>
+                            <div class="clearAfter"></div>
+                            <div>
+                              <label>HLGT</label>
+                              <span><input type=“text” required class="form-control"
+                                aria-describedby="basic-addon1"></span>
+                            </div>
+                            <div class="clearAfter"></div>
+                            <div>
+                              <label>HLT</label>
+                              <span><input type=“text” required class="form-control"
+                                aria-describedby="basic-addon1"></span>
+                            </div>
+                            <div class="clearAfter"></div>
+                            <div>
+                              <label>PT</label>
+                              <span><input type=“text” required class="form-control"
+                                aria-describedby="basic-addon1"></span>
+                            </div>
+                            <div class="clearAfter"></div>
+                            <div>
+                              <label>LLT</label>
+                              <span><input type=“text” required class="form-control"
+                                aria-describedby="basic-addon1"></span>
+                            </div>
+                            <div class="clearAfter"></div>
+                            <div>
+                              <label>MedDRA Version</label>
+                              <span><input type=“text” required class="form-control"
+                                aria-describedby="basic-addon1"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel-group" id="currentDictionary">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#currentDictionary" href="#currentDictionaryTab">
+                            Current Dictionary
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="currentDictionaryTab" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                          <div class="coded-wrap">
+                            <div>
+                              <label>SOC</label>
+                              <span><input type=“text” required class="form-control"
+                                aria-describedby="basic-addon1"></span>
+                            </div>
+                            <div class="clearAfter"></div>
+                            <div>
+                              <label>HLGT</label>
+                              <span><input type=“text” required class="form-control"
+                                aria-describedby="basic-addon1"></span>
+                            </div>
+                            <div class="clearAfter"></div>
+                            <div>
+                              <label>HLT</label>
+                              <span><input type=“text” required class="form-control"
+                                aria-describedby="basic-addon1"></span>
+                            </div>
+                            <div class="clearAfter"></div>
+                            <div>
+                              <label>PT</label>
+                              <span><input type=“text” required class="form-control"
+                                aria-describedby="basic-addon1"></span>
+                            </div>
+                            <div class="clearAfter"></div>
+                            <div>
+                              <label>LLT</label>
+                              <span><input type=“text” required class="form-control"
+                                aria-describedby="basic-addon1"></span>
+                            </div>
+                            <div class="clearAfter"></div>
+                            <div class="row">
+                              <div class="col-md-6">
+                                <label>MedDRA Version</label>
+                                <span><input type=“text” required class="form-control"
+                                  aria-describedby="basic-addon1"></span>
+                              </div>
+                              <label class="checkbox-inline">
+                                <input type="checkbox" value="">Non current
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel-group" id="primarySOC" *ngIf="showLabDataForms">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#primarySOC" href="#primarySOCTab">
+                    Primary SOC Hierarchy
+                  </a>
+                </h4>
+              </div>
+              <div id="primarySOCTab" class="panel-collapse collapse in">
+                <div class="panel-body">
+                  <div class="panel-group" id="asCodedPrimary">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#asCodedPrimary" href="#asCodedPrimaryTab">
+                            As Coded
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="asCodedPrimaryTab" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                          <div class="coded-wrap">
+                            <div>
+                              <label>SOC</label>
+                              <span><input type=“text” required class="form-control"
+                                aria-describedby="basic-addon1"></span>
+                            </div>
+                            <div class="clearAfter"></div>
+                            <div>
+                              <label>HLGT</label>
+                              <span><input type=“text” required class="form-control"
+                                aria-describedby="basic-addon1"></span>
+                            </div>
+                            <div class="clearAfter"></div>
+                            <div>
+                              <label>HLT</label>
+                              <span><input type=“text” required class="form-control"
+                                aria-describedby="basic-addon1"></span>
+                            </div>
+                            <div class="clearAfter"></div>
+                            <div>
+                              <label>PT</label>
+                              <span><input type=“text” required class="form-control"
+                                aria-describedby="basic-addon1"></span>
+                            </div>
+                            <div class="clearAfter"></div>
+                            <div>
+                              <label>LLT</label>
+                              <span><input type=“text” required class="form-control"
+                                aria-describedby="basic-addon1"></span>
+                            </div>
+                            <div class="clearAfter"></div>
+                            <div>
+                              <label>MedDRA Version</label>
+                              <span><input type=“text” required class="form-control"
+                                aria-describedby="basic-addon1"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel-group" id="primaryCurrentDictionary">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#primaryCurrentDictionary" href="#primaryCurrentDictionaryTab">
+                            Current Dictionary
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="primaryCurrentDictionaryTab" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                          <div class="coded-wrap">
+                            <div>
+                              <label>SOC</label>
+                              <span><input type=“text” required class="form-control"
+                                aria-describedby="basic-addon1"></span>
+                            </div>
+                            <div class="clearAfter"></div>
+                            <div>
+                              <label>HLGT</label>
+                              <span><input type=“text” required class="form-control"
+                                aria-describedby="basic-addon1"></span>
+                            </div>
+                            <div class="clearAfter"></div>
+                            <div>
+                              <label>HLT</label>
+                              <span><input type=“text” required class="form-control"
+                                aria-describedby="basic-addon1"></span>
+                            </div>
+                            <div class="clearAfter"></div>
+                            <div>
+                              <label>PT</label>
+                              <span><input type=“text” required class="form-control"
+                                aria-describedby="basic-addon1"></span>
+                            </div>
+                            <div class="clearAfter"></div>
+                            <div>
+                              <label>LLT</label>
+                              <span><input type=“text” required class="form-control"
+                                aria-describedby="basic-addon1"></span>
+                            </div>
+                            <div class="clearAfter"></div>
+                            <div class="row">
+                              <div class="col-md-6">
+                                <label>MedDRA Version</label>
+                                <span><input type=“text” required class="form-control"
+                                  aria-describedby="basic-addon1"></span>
+                              </div>
+                              <label class="checkbox-inline">
+                                <input type="checkbox" value="">Non current
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lab-footer" *ngIf="!showLabDataForms">
+            <div class="btn-group" role="group" aria-label="...">
+              <button type="button" class="btn btn-default" (click)="addLabDataForms()">Add</button>
+              <button type="button" class="btn btn-default">Delete</button>
+              <button type="button" class="btn btn-default">Delete All</button>
+              <button type="button" class="btn btn-default">Duplicate</button>
+              <button type="button" class="btn btn-default">Open</button>
+              <button type="button" class="btn btn-default">Autocode</button>
+              <button type="button" class="btn btn-default">Copy rom Excel</button>
+              <button type="button" class="btn btn-default">Undo Copy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

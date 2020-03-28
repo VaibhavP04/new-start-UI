@@ -15,6 +15,9 @@ import { PersonComponent } from './person/person.component';
 import { PatientComponent } from './patient/patient.component';
 import { DiseaseComponent } from './disease/disease.component';
 import { EventComponent } from './event/event.component';
+import { CommentsComponent } from './comments/comments.component';
+import { LiteratureComponent } from './literature/literature.component';
+import { LabDataComponent } from './labData/lab-data.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +28,9 @@ import { EventComponent } from './event/event.component';
     PatientComponent,
     DiseaseComponent,
     EventComponent,
+    CommentsComponent,
+    LiteratureComponent,
+    LabDataComponent,
   ],
   imports: [
     BrowserModule,
