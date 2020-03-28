@@ -89,3 +89,22 @@
   }
 }
 
+/*.navbar-nav{
+  .record-list{
+    &:hover{
+      .showOnHover{
+        display: block;
+        list-style-type: none;
+        padding: 0;
+        border: 1px solid #ccc;
+        a{
+          color: #ffa400;
+        }
+      }
+    }
+  }
+  .showOnHover{
+    display: none;
+  }
+}*/
+

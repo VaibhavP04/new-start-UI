@@ -22,6 +22,10 @@ export class DashboardComponent implements OnInit {
   faArrowDown = faArrowDown;
 
   toggle = false;
+  showRecordList = true;
+  showFormList = false;
+  showColorForRecord = true;
+  showColorForForm = false;
 
   constructor(private dashBoardSer: DashboardService) { }
 
@@ -30,6 +34,24 @@ export class DashboardComponent implements OnInit {
 
   switchToTabs() {
     this.toggle = !this.toggle;
+  }
+
+  showRespectiveList(event) {
+    if(event === 'Record') {
+      this.showRecordList = true;
+      this.showFormList = false;
+      this.showColorForRecord = true;
+      this.showColorForForm = false;
+      this.toggle = false;
+    } else if (event === 'Forms') {
+      this.showFormList = true;
+      this.showRecordList = false;
+      this.showColorForForm = true;
+      this.showColorForRecord = false;
+    } else {
+      this.showRecordList = false;
+      this.showFormList = false;
+    }
   }
 
 }

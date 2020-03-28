@@ -18,6 +18,7 @@ import { EventComponent } from './event/event.component';
 import { CommentsComponent } from './comments/comments.component';
 import { LiteratureComponent } from './literature/literature.component';
 import { LabDataComponent } from './labData/lab-data.component';
+import { ProductComponent } from './product/product.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { LabDataComponent } from './labData/lab-data.component';
     CommentsComponent,
     LiteratureComponent,
     LabDataComponent,
+    ProductComponent,
   ],
   imports: [
     BrowserModule,

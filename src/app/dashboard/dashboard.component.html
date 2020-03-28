@@ -20,8 +20,9 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a href="#">Case</a></li>
-        <li><a href="#">Record</a></li>
-        <li class="active"><a href="#">Forms</a></li>
+        <li [ngClass]="{'active': showColorForRecord}" class="record-list"><a href="#" (click)="showRespectiveList($event.target.innerHTML)">Record</a>
+        </li>
+        <li [ngClass]="{'active': showColorForForm}"><a href="#" (click)="showRespectiveList($event.target.innerHTML)">Forms</a></li>
         <li><a href="#">Dictionary</a></li>
         <li><a href="#">Submission and tracking</a></li>
       </ul>
@@ -33,7 +34,22 @@
         <li><fa-icon class="close" [icon]="faTimes"></fa-icon></li>
       </ul>
     </div>
-    <div class="nav-links" *ngIf="!toggle">
+    <div class="nav-links" *ngIf="showRecordList">
+      <div class="clearAfter pullLeft">
+        <ul>
+          <li>
+            <a><span>1</span> Duplicate</a>
+          </li>
+          <li>
+            <a><span>2</span> Delete/Remove</a>
+          </li>
+          <li>
+            <a><span>3</span> Insert</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="nav-links" *ngIf="!toggle && showFormList">
       <div class="clearAfter pullLeft">
         <ul>
           <li>
@@ -65,7 +81,7 @@
       <div class="clearAfter pullLeft">
         <ul>
           <li>
-            <a><span>5</span> Distribution List</a>
+            <a><span>4</span> Distribution List</a>
             <ul class="remove-padding">
               <li><a>Autority</a></li>
             </ul>
@@ -73,7 +89,7 @@
         </ul>
         <ul>
           <li>
-            <a><span>6</span> Affiliate Reporting</a>
+            <a><span>5</span> Affiliate Reporting</a>
             <ul class="remove-padding">
               <li><a>General</a></li>
             </ul>
@@ -81,7 +97,7 @@
         </ul>
         <ul>
           <li>
-            <a><span>7</span> Data</a>
+            <a><span>6</span> Data</a>
             <ul class="remove-padding">
               <li><a>Lab Data Matrix</a></li>
             </ul>
@@ -96,6 +112,7 @@
     <app-patient></app-patient>
     <app-disease></app-disease>
     <app-event></app-event>
+    <app-product></app-product>
     <app-lab-data></app-lab-data>
     <app-comments></app-comments>
     <app-literature></app-literature>
