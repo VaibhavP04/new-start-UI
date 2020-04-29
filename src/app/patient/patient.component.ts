@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class PatientComponent implements OnInit {
 
   showDateField = false;
+  showLmp = false;
+
 
   constructor() { }
 
@@ -19,6 +21,14 @@ export class PatientComponent implements OnInit {
       this.showDateField = true;
     } else {
       this.showDateField = false;
+    }
+  }
+
+  showLMP(event) {
+    if(event === 'Female') {
+      this.showLmp = true;
+    } else {
+      this.showLmp = false;
     }
   }
 

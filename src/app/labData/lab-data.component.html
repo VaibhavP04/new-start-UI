@@ -490,6 +490,22 @@
               </div>
             </div>
           </div>
+          <div class="panel-group" id="labTest" *ngIf="showLabDataForms">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#labTest" href="#labTestTab">
+                    Relevant Laboratory Tests Or Data
+                  </a>
+                </h4>
+              </div>
+              <div id="labTestTab" class="panel-collapse collapse in">
+                <div class="panel-body">
+                  <textarea rows="10" col="10"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="lab-footer" *ngIf="!showLabDataForms">
             <div class="btn-group" role="group" aria-label="...">
               <button type="button" class="btn btn-default" (click)="addLabDataForms()">Add</button>

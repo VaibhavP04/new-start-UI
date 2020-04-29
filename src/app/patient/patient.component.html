@@ -39,7 +39,7 @@
                                 <input type=“number” required class="form-control"
                                   aria-describedby="basic-addon1">
                               </div>
-                              <div class="input-group my-group">
+                              <!-- <div class="input-group my-group">
                                 <label>French Department</label>
                                 <select id="lunch" class="selectpicker form-control" data-live-search="true" title="Please select an option ...">
                                     <option>Option 1</option>
@@ -47,10 +47,10 @@
                                     <option>Option 3</option>
                                     <option>Option 4</option>
                                 </select>
-                              </div>
+                              </div> -->
                               <div class="input-group my-group">
                                 <label>Sex</label>
-                                <select id="lunch" class="selectpicker form-control" data-live-search="true" title="Please select an option ...">
+                                <select (change)="showLMP($event.target.value)" id="lunch" class="selectpicker form-control" data-live-search="true" title="Please select an option ...">
                                     <option>Male</option>
                                     <option>Female</option>
                                 </select>
@@ -236,7 +236,7 @@
                                   </div>
                                 </div>
                               </div>
-                              <div class="input-group my-group">
+                              <div *ngIf="showLmp" class="input-group my-group">
                                 <label>LMP Date</label>
                                 <select id="lunch" class="selectpicker form-control" data-live-search="true" title="Please select an option ...">
                                     <option>Option 1</option>
@@ -343,7 +343,7 @@
                       <div class="panel-heading">
                         <h4 class="panel-title">
                           <a class="accordion-toggle" data-toggle="collapse" data-parent="#patientPastDetails" href="#patientPastDetailsTab">
-                            Death Info
+                            Patient Past Relevant Data
                           </a>
                         </h4>
                       </div>
@@ -517,7 +517,7 @@
                                 <input type="date" required class="form-control"
                                   aria-describedby="basic-addon1">
                               </div>
-                              <div class="input-group">
+                              <div *ngIf="showLmp" class="input-group">
                                 <label>LMP Date</label>
                                 <input type="date" required class="form-control"
                                   aria-describedby="basic-addon1">
@@ -526,7 +526,7 @@
                             <div class="col-md-6">
                               <div class="input-group my-group">
                                 <label>Sex</label>
-                                <select id="lunch" class="selectpicker form-control" data-live-search="true" title="Please select an option ...">
+                                <select (change)="showLMP($event.target.value)"  id="lunch" class="selectpicker form-control" data-live-search="true" title="Please select an option ...">
                                     <option>Male</option>
                                     <option>Female</option>
                                 </select>
