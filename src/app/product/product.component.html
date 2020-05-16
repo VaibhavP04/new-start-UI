@@ -8,91 +8,8 @@
           </a>
         </h4>
       </div>
-      <div id="productTab" class="panel-collapse collapse in">
+      <div id="productTab" class="panel-collapse collapse">
         <div class="panel-body">
-          <div class="panel-group" id="ingredients">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#ingredients" href="#ingredientsTab">
-                    Ingredients
-                  </a>
-                </h4>
-              </div>
-              <div id="ingredientsTab" class="panel-collapse collapse in">
-                <div class="panel-body">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="input-group">
-                        <label>Substance Name</label>
-                        <input type=“text” required class="form-control"
-                          aria-describedby="basic-addon1">
-                      </div>
-                      <div class="input-group">
-                        <label>CAS Number (Chemical Abstracts Service)</label>
-                        <input type=“text” required class="form-control"
-                          aria-describedby="basic-addon1">
-                      </div>
-                      <div class="input-group">
-                        <label>Strength</label>
-                        <input type=“text” required class="form-control"
-                          aria-describedby="basic-addon1">
-                      </div>
-                      <div class="input-group my-group">
-                        <label>Type</label>
-                        <select id="lunch" class="selectpicker form-control" data-live-search="true" title="Please select an option ...">
-                            <option>Option 1</option>
-                            <option>Option 2</option>
-                            <option>Option 3</option>
-                            <option>Option 4</option>
-                        </select>
-                      </div>
-                      <div class="input-group">
-                        <label>Term ID</label>
-                        <input type=“text” required class="form-control"
-                          aria-describedby="basic-addon1">
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="input-group">
-                        <label>CDC</label>
-                        <input type=“text” required class="form-control"
-                          aria-describedby="basic-addon1">
-                      </div>
-                      <div class="input-group my-group">
-                        <label>Class Of Ingredient</label>
-                        <select id="lunch" class="selectpicker form-control" data-live-search="true" title="Please select an option ...">
-                            <option>Option 1</option>
-                            <option>Option 2</option>
-                            <option>Option 3</option>
-                            <option>Option 4</option>
-                        </select>
-                      </div>
-                      <div class="input-group my-group">
-                        <label>Strength Unit</label>
-                        <select id="lunch" class="selectpicker form-control" data-live-search="true" title="Please select an option ...">
-                            <option>Option 1</option>
-                            <option>Option 2</option>
-                            <option>Option 3</option>
-                            <option>Option 4</option>
-                        </select>
-                      </div>
-                      <div class="input-group">
-                        <label class="checkbox-inline">
-                          <input type="checkbox" value="">Primary Active
-                        </label>
-                      </div>
-                      <div class="input-group">
-                        <label>Term ID Operation Date</label>
-                        <input type="date" required class="form-control"
-                          aria-describedby="basic-addon1">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
           <div class="panel-group" id="productInner">
             <div class="panel panel-default">
               <div class="panel-heading">
@@ -102,9 +19,9 @@
                   </a>
                 </h4>
               </div>
-              <div id="productInnerTab" class="panel-collapse collapse in">
+              <div id="productInnerTab" class="panel-collapse collapse">
                 <div class="panel-body">
-                  <div class="row">
+                  <!-- <div class="row">
                     <div class="col-md-6">
                       <div class="input-group">
                         <label>Product Description</label>
@@ -349,6 +266,1058 @@
                           aria-describedby="basic-addon1">
                       </div>
                     </div>
+                  </div> -->
+                  <div class="row">
+                    <div class="col-md-12">
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th>Product Type</th>
+                            <th>Product Flag</th>
+                            <th>Product Description</th>
+                            <th>Preferred product description</th>
+                            <th>Local tradename</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Vaccine</td>
+                            <td>Suspect</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <ul class="list-buttons">
+                        <li>
+                          <button type="button" class="btn btn-default">Add</button>
+                          <button type="button" class="btn btn-default">Delete</button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel-group" id="productInfo">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#productInfo" href="#productInfoTab">
+                    Product Information
+                  </a>
+                </h4>
+              </div>
+              <div id="productInfoTab" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="panel-group" id="productInfoInner">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#productInfoInner" href="#productInfoInnerTab">
+                            Product Information
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="productInfoInnerTab" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="input-group">
+                                <label>Product Description</label>
+                                <input disabled type="text" required class="form-control" aria-describedby="basic-addon1">
+                              </div>
+                              <div class="input-group my-group">
+                                <label>Product Flag</label>
+                                <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                                  title="Please select an option ...">
+                                  <option>Suspect</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                  <option>Option 4</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel-group" id="productInfoGeneral">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#productInfoGeneral" href="#productInfoGeneralTab">
+                            General
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="productInfoGeneralTab" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="input-group">
+                                <label>Case Level Expectedness</label>
+                                <label class="radio-inline">
+                                  <input type="radio" value="">Expected
+                                </label>
+                                <label class="radio-inline">
+                                  <input type="radio" value="">Unexpected
+                                </label>
+                                <label class="checkbox-inline">
+                                  <input type="checkbox" value="">Manual
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel-group" id="expectedness">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#expectedness" href="#expectednessTab">
+                            Expectedness
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="expectednessTab" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="input-group my-group">
+                                <label>Country</label>
+                                <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                                  title="Please select an option ...">
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                  <option>Option 4</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-12">
+                              <table class="table table-bordered">
+                                <thead>
+                                  <tr>
+                                    <th>Reported Term</th>
+                                    <th>Time Flag</th>
+                                    <th>Labeling Country</th>
+                                    <th>Labeled?</th>
+                                    <th>Manual</th>
+                                    <th>CL</th>
+                                    <th>Condition</th>
+                                    <th>SUSAR</th>
+                                    <th>Manual</th>
+                                    <th>USADE</th>
+                                    <th>Manual</th>
+                                    <th>Labeling Ver</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <ul class="list-buttons">
+                                <li>
+                                  <button class="btn btn-default">Add</button>
+                                  <button class="btn btn-default">Delete</button>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel-group" id="causalityInfo">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#causalityInfo" href="#causalityInfoTab">
+                            Causality
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="causalityInfoTab" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <table class="table table-bordered">
+                                <thead>
+                                  <tr>
+                                    <th>Reported Term</th>
+                                    <th>Time Flag</th>
+                                    <th>AESI</th>
+                                    <th>Reporter causality</th>
+                                    <th>Company causality</th>
+                                    <th>Causality HQ</th>
+                                    <th>Dechallenge</th>
+                                    <th>Rechallenge</th>
+                                    <th>Assess Relationship</th>
+                                    <th>Action(s) aken with Drug</th>
+                                    <th>Causality Assessent</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <ul class="list-buttons">
+                                <li>
+                                  <button class="btn btn-default">Add</button>
+                                  <button class="btn btn-default">Delete</button>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel-group" id="E2bCausality">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#E2bCausality" href="#E2bCausalityTab">
+                            E2B Causality
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="E2bCausalityTab" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="input-group my-group">
+                                <label>Causality Source</label>
+                                <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                                  title="Please select an option ...">
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                  <option>Option 4</option>
+                                </select>
+                              </div>
+                              <div class="input-group my-group">
+                                <label>Method</label>
+                                <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                                  title="Please select an option ...">
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                  <option>Option 4</option>
+                                </select>
+                              </div>
+                              <div class="input-group my-group">
+                                <label>Result</label>
+                                <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                                  title="Please select an option ...">
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                  <option>Option 4</option>
+                                </select>
+                              </div>
+                              <div class="input-group my-group">
+                                <label>Assessment Method</label>
+                                <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                                  title="Please select an option ...">
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                  <option>Option 4</option>
+                                </select>
+                              </div>
+                              <div class="input-group my-group">
+                                <label>WHO-UMC Evaluation Result</label>
+                                <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                                  title="Please select an option ...">
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                  <option>Option 4</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="input-group">
+                                <label>Source Text</label>
+                                <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                              </div>
+                              <div class="input-group">
+                                <label>Method Text</label>
+                                <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                              </div>
+                              <div class="input-group">
+                                <label>Result Text</label>
+                                <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                              </div>
+                              <div class="input-group my-group">
+                                <label>KRCT Evaluation Result</label>
+                                <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                                  title="Please select an option ...">
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                  <option>Option 4</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel-group" id="latency">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#latency" href="#latencyTab">
+                            Latency
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="latencyTab" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="input-group">
+                                <label>Latency</label>
+                                <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="input-group my-group">
+                                <label>&nbsp;</label>
+                                <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                                  title="Please select an option ...">
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                  <option>Option 4</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="input-group">
+                                <label>Last Dose Latency</label>
+                                <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="input-group my-group">
+                                <label>&nbsp;</label>
+                                <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                                  title="Please select an option ...">
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                  <option>Option 4</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel-group" id="outcome">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#outcome" href="#outcomeTab">
+                            Outcome
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="outcomeTab" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="input-group my-group">
+                                <label>Outcome After Change</label>
+                                <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                                  title="Please select an option ...">
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                  <option>Option 4</option>
+                                </select>
+                              </div>
+                              <div class="input-group">
+                                <label>Outcome Aftre Re-Intro</label>
+                                <label class="radio-inline">
+                                  <input type="radio" value="">Re-appered
+                                </label>
+                                <label class="radio-inline">
+                                  <input type="radio" value="">Did not appear
+                                </label>
+                                <label class="radio-inline">
+                                  <input type="radio" value="">Unknown
+                                </label>
+                                <label class="radio-inline">
+                                  <input type="radio" value="">Not reported
+                                </label>
+                                <label class="radio-inline">
+                                  <input type="radio" value="">Not applicable
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel-group" id="assessment">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#assessment" href="#assessmentTab">
+                            Assessment
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="assessmentTab" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="input-group my-group">
+                                <label>Lab Test Confirmation</label>
+                                <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                                  title="Please select an option ...">
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                  <option>Option 4</option>
+                                </select>
+                              </div>
+                              <div class="input-group">
+                                <label>Not Reportable To PMS</label>
+                                <label class="checkbox-inline">
+                                  <input type="checkbox" value="">
+                                </label>
+                              </div>
+                              <div class="input-group">
+                                <label>Watchlist</label>
+                                <label class="checkbox-inline">
+                                  <input type="checkbox" value="">
+                                </label>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="input-group my-group">
+                                <label>Receipt Site Causality</label>
+                                <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                                  title="Please select an option ...">
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                  <option>Option 4</option>
+                                </select>
+                              </div>
+                              <div class="input-group">
+                                <label>Not Reportable To CT</label>
+                                <label class="checkbox-inline">
+                                  <input type="checkbox" value="">
+                                </label>
+                              </div>
+                              <div class="input-group">
+                                <label>Action</label>
+                                <textarea></textarea>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="input-group">
+                                <label>LSO Causality</label>
+                                <textarea></textarea>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel-group" id="causalityDevice">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#causalityDevice" href="#causalityDeviceTab">
+                            Causality As Per (Device)
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="causalityDeviceTab" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="input-group my-group">
+                                <label>Reporter</label>
+                                <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                                  title="Please select an option ...">
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                  <option>Option 4</option>
+                                </select>
+                              </div>
+                              <div class="input-group my-group">
+                                <label>Company</label>
+                                <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                                  title="Please select an option ...">
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                  <option>Option 4</option>
+                                </select>
+                              </div>
+                              <div class="input-group my-group">
+                                <label>HQ</label>
+                                <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                                  title="Please select an option ...">
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                  <option>Option 4</option>
+                                </select>
+                              </div>
+                              <div class="input-group">
+                                <label>Date Causality</label>
+                                <input type="date" required class="form-control" aria-describedby="basic-addon1">
+                              </div>
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <div class="input-group">
+                                    <label>Temporal Association</label>
+                                    <label class="radio-inline">
+                                      <input type="radio" value="">Yes
+                                    </label>
+                                    <label class="radio-inline">
+                                      <input type="radio" value="">No
+                                    </label>
+                                  </div>
+                                  <div class="input-group">
+                                    <label>Has Product Caused The Event?</label>
+                                    <label class="radio-inline">
+                                      <input type="radio" value="">Yes
+                                    </label>
+                                    <label class="radio-inline">
+                                      <input type="radio" value="">No
+                                    </label>
+                                  </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="input-group">
+                                  <label>Is Chronology Incompitable?</label>
+                                  <label class="radio-inline">
+                                    <input type="radio" value="">Yes
+                                  </label>
+                                  <label class="radio-inline">
+                                    <input type="radio" value="">No
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="panel-group" id="causalityProcedure">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#causalityProcedure" href="#causalityProcedureTab">
+                            Causality As Per (Procedure)
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="causalityProcedureTab" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="input-group my-group">
+                                <label>Reporter</label>
+                                <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                                  title="Please select an option ...">
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                  <option>Option 4</option>
+                                </select>
+                              </div>
+                              <div class="input-group my-group">
+                                <label>Company</label>
+                                <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                                  title="Please select an option ...">
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                  <option>Option 4</option>
+                                </select>
+                              </div>
+                              <div class="input-group my-group">
+                                <label>HQ</label>
+                                <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                                  title="Please select an option ...">
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                  <option>Option 4</option>
+                                </select>
+                              </div>
+                              <div class="input-group">
+                                <label>Date Causality</label>
+                                <input type="date" required class="form-control" aria-describedby="basic-addon1">
+                              </div>
+                              <div class="input-group">
+                                <label>Temporal Association</label>
+                                <label class="radio-inline">
+                                  <input type="radio" value="">Yes
+                                </label>
+                                <label class="radio-inline">
+                                  <input type="radio" value="">No
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel-group" id="causalityCosmetic">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#causalityCosmetic" href="#causalityCosmeticTab">
+                            Causality As Per (Cosmetic)
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="causalityCosmeticTab" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="input-group my-group">
+                                <label>Causality Assessment (Cosmetic)</label>
+                                <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                                  title="Please select an option ...">
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                  <option>Option 4</option>
+                                </select>
+                              </div>
+                              <div class="input-group my-group">
+                                <label>Symptomatalogy</label>
+                                <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                                  title="Please select an option ...">
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                  <option>Option 4</option>
+                                </select>
+                              </div>
+                              <div class="input-group my-group">
+                                <label>Outcome after Re-Exposure</label>
+                                <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                                  title="Please select an option ...">
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                  <option>Option 4</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="input-group my-group">
+                                <label>Chronology Cosmetic</label>
+                                <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                                  title="Please select an option ...">
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                  <option>Option 4</option>
+                                </select>
+                              </div>
+                              <div class="input-group my-group">
+                                <label>Additional Examinations</label>
+                                <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                                  title="Please select an option ...">
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                  <option>Option 4</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel-group" id="frenchImputability">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#frenchImputability" href="#frenchImputabilityTab">
+                            French Imputability
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="frenchImputabilityTab" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="input-group my-group">
+                                <label>Chronology</label>
+                                <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                                  title="Please select an option ...">
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                  <option>Option 4</option>
+                                </select>
+                              </div>
+                              <div class="input-group my-group">
+                                <label>Semoiology Per Se</label>
+                                <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                                  title="Please select an option ...">
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                  <option>Option 4</option>
+                                </select>
+                              </div>
+                              <div class="input-group my-group">
+                                <label>Imputability</label>
+                                <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                                  title="Please select an option ...">
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                  <option>Option 4</option>
+                                </select>
+                              </div>
+                              <div class="input-group my-group">
+                                <label>Bibilographic Imputability</label>
+                                <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                                  title="Please select an option ...">
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                  <option>Option 4</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel-group" id="aesi">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#aesi" href="#aesiTab">
+                            AESI
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="aesiTab" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="input-group">
+                                <label>AESI</label>
+                                <label class="checkbox-inline">
+                                  <input type="checkbox" value="">
+                                </label>
+                              </div>
+                              <div class="input-group my-group">
+                                <label>Reason</label>
+                                <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                                  title="Please select an option ...">
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                  <option>Option 4</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="input-group">
+                                <label>Manual</label>
+                                <label class="checkbox-inline">
+                                  <input type="checkbox" value="">
+                                </label>
+                              </div>
+                              <div class="input-group">
+                                <label>Reason Text</label>
+                                <textarea></textarea>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel-group" id="anicipatedEvent">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#anicipatedEvent" href="#anicipatedEventTab">
+                            Anticipated Event
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="anicipatedEventTab" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="input-group">
+                                <label>Anticipated Event</label>
+                                <label class="checkbox-inline">
+                                  <input type="checkbox" value="">
+                                </label>
+                              </div>
+                              <div class="input-group my-group">
+                                <label>Reason</label>
+                                <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                                  title="Please select an option ...">
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                  <option>Option 4</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="input-group">
+                                <label>Manual</label>
+                                <label class="checkbox-inline">
+                                  <input type="checkbox" value="">
+                                </label>
+                              </div>
+                              <div class="input-group">
+                                <label>Reason Text</label>
+                                <textarea></textarea>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel-group" id="prodIndicationInfo">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#prodIndicationInfo" href="#indicationInfoTab">
+                    Indication
+                  </a>
+                </h4>
+              </div>
+              <div id="indicationInfoTab" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="panel-group" id="indicationInfo">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#indicationInfo" href="#indicationInfoPanel">
+                            Indication Information
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="indicationInfoPanel" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="input-group">
+                                <label>Indication Term</label>
+                                <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="input-group">
+                                <label>ICD Code</label>
+                                <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="input-group">
+                                <label>&nbsp;</label>
+                                <input disabled type="text" required class="form-control" aria-describedby="basic-addon1">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="input-group">
+                                <label>Cause Of Death</label>
+                                <label class="radio-inline">
+                                  <input type="radio" value="">Yes
+                                </label>
+                                <label class="radio-inline">
+                                  <input type="radio" value="">No
+                                </label>
+                                <label class="radio-inline">
+                                  <input type="radio" value="">Unknown
+                                </label>
+                              </div>
+                              <div class="input-group">
+                                <label>Lack Of Effect</label>
+                                <label class="radio-inline">
+                                  <input type="radio" value="">Yes
+                                </label>
+                                <label class="radio-inline">
+                                  <input type="radio" value="">No
+                                </label>
+                              </div>
+                              <div class="input-group">
+                                <label>Labeled Indication ?</label>
+                                <label class="radio-inline">
+                                  <input type="radio" value="">Yes
+                                </label>
+                                <label class="radio-inline">
+                                  <input type="radio" value="">No
+                                </label>
+                              </div>
+                              <div class="input-group">
+                                <label>Description As Per Reporter</label>
+                                <textarea></textarea>
+                              </div>
+                              <div class="input-group">
+                                <label>Description As Per Company</label>
+                                <textarea></textarea>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel-group" id="ingredients">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#ingredients" href="#ingredientsTab">
+                    Ingredients
+                  </a>
+                </h4>
+              </div>
+              <div id="ingredientsTab" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="input-group">
+                        <label>Substance Name</label>
+                        <input type=“text” required class="form-control"
+                          aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group">
+                        <label>CAS Number (Chemical Abstracts Service)</label>
+                        <input type=“text” required class="form-control"
+                          aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group">
+                        <label>Strength</label>
+                        <input type=“text” required class="form-control"
+                          aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group my-group">
+                        <label>Type</label>
+                        <select id="lunch" class="selectpicker form-control" data-live-search="true" title="Please select an option ...">
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                            <option>Option 4</option>
+                        </select>
+                      </div>
+                      <div class="input-group">
+                        <label>Term ID</label>
+                        <input type=“text” required class="form-control"
+                          aria-describedby="basic-addon1">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input-group">
+                        <label>CDC</label>
+                        <input type=“text” required class="form-control"
+                          aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group my-group">
+                        <label>Class Of Ingredient</label>
+                        <select id="lunch" class="selectpicker form-control" data-live-search="true" title="Please select an option ...">
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                            <option>Option 4</option>
+                        </select>
+                      </div>
+                      <div class="input-group my-group">
+                        <label>Strength Unit</label>
+                        <select id="lunch" class="selectpicker form-control" data-live-search="true" title="Please select an option ...">
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                            <option>Option 4</option>
+                        </select>
+                      </div>
+                      <div class="input-group">
+                        <label class="checkbox-inline">
+                          <input type="checkbox" value="">Primary Active
+                        </label>
+                      </div>
+                      <div class="input-group">
+                        <label>Term ID Operation Date</label>
+                        <input type="date" required class="form-control"
+                          aria-describedby="basic-addon1">
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -363,31 +1332,69 @@
                   </a>
                 </h4>
               </div>
-              <div id="productDetailsTab" class="panel-collapse collapse in">
+              <div id="productDetailsTab" class="panel-collapse collapse">
                 <div class="panel-body">
                   <div class="row">
                     <div class="col-md-6">
-                      <div class="input-group">
-                        <label>Pharmaceutical Product ID</label>
-                        <input type=“text” required class="form-control"
-                          aria-describedby="basic-addon1">
+                      <div class="row">
+                        <div class="col-md-3">
+                          <div class="input-group">
+                            <label>Pharmaceutical Product ID</label>
+                            <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="input-group">
+                            <label>&nbsp;</label>
+                            <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                          </div>
+                        </div>
                       </div>
                       <div class="input-group">
                         <label>Medicinal Product ID</label>
-                        <input type=“text” required class="form-control"
-                          aria-describedby="basic-addon1">
+                        <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group">
+                        <label>Scientific Name</label>
+                        <textarea></textarea>
+                      </div>
+                      <div class="input-group">
+                        <label>Strength Name</label>
+                        <textarea></textarea>
+                      </div>
+                      <div class="input-group">
+                        <label>Trademark Name</label>
+                        <textarea></textarea>
+                      </div>
+                      <div class="input-group">
+                        <label>Device Name</label>
+                        <textarea></textarea>
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="input-group">
-                        <label>PhPID Operation Date</label>
-                        <input type="date" required class="form-control"
-                          aria-describedby="basic-addon1">
+                        <label>PhPID Version Date/Number</label>
+                        <input type="text" required class="form-control" aria-describedby="basic-addon1">
                       </div>
                       <div class="input-group">
                         <label>MP ID Version Date/Number</label>
-                        <input type="date" required class="form-control"
-                          aria-describedby="basic-addon1">
+                        <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group">
+                        <label>Invented Name</label>
+                        <textarea></textarea>
+                      </div>
+                      <div class="input-group">
+                        <label>Form Name</label>
+                        <textarea></textarea>
+                      </div>
+                      <div class="input-group">
+                        <label>Intended Use Name</label>
+                        <textarea></textarea>
+                      </div>
+                      <div class="input-group">
+                        <label>Container Name</label>
+                        <textarea></textarea>
                       </div>
                     </div>
                   </div>
@@ -395,94 +1402,1630 @@
               </div>
             </div>
           </div>
-          <div class="panel-group" id="administration">
+          <div class="panel-group" id="reviewDetails">
             <div class="panel panel-default">
               <div class="panel-heading">
                 <h4 class="panel-title">
-                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#administration" href="#administrationTab">
-                    Administrate
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#reviewDetails" href="#reviewDetailsTab">
+                    Review Details
                   </a>
                 </h4>
               </div>
-              <div id="administrationTab" class="panel-collapse collapse in">
+              <div id="reviewDetailsTab" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="input-group">
+                        <label>Reviewed By</label>
+                        <input disabled type="text" required class="form-control" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group">
+                        <label>Reviewed Date</label>
+                        <input disabled type="date" required class="form-control" aria-describedby="basic-addon1">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input-group my-group">
+                        <label>Review Level</label>
+                        <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                          title="Please select an option ...">
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                          <option>Option 4</option>
+                        </select>
+                      </div>
+                      <div class="input-group">
+                        <label>Review Comments</label>
+                        <textarea></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel-group" id="dosageRegimen">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#dosageRegimen" href="#dosageRegimenTab">
+                    Dosing Regimen
+                  </a>
+                </h4>
+              </div>
+              <div id="dosageRegimenTab" class="panel-collapse collapse">
                 <div class="panel-body">
                   <div class="row">
                     <div class="col-md-6">
                       <div class="input-group my-group">
-                        <label>Route Of Admin</label>
-                        <select id="lunch" class="selectpicker form-control" data-live-search="true" title="Please select an option ...">
-                            <option>Option 1</option>
-                            <option>Option 2</option>
-                            <option>Option 3</option>
-                            <option>Option 4</option>
-                        </select>
-                      </div>
-                      <div class="input-group my-group">
-                        <label>Route Of Administration 3</label>
-                        <select id="lunch" class="selectpicker form-control" data-live-search="true" title="Please select an option ...">
-                            <option>Option 1</option>
-                            <option>Option 2</option>
-                            <option>Option 3</option>
-                            <option>Option 4</option>
+                        <label>Form Of Admin</label>
+                        <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                          title="Please select an option ...">
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                          <option>Option 4</option>
                         </select>
                       </div>
                       <div class="row">
-                        <div class="col-md-3">
+                        <div class="col-md-6">
                           <div class="input-group">
-                            <label>Duration</label>
-                            <input type=“text” required class="form-control"
-                              aria-describedby="basic-addon1">
+                            <label>Form Of Strength</label>
+                            <input type="text" required class="form-control" aria-describedby="basic-addon1">
                           </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-6">
                           <div class="input-group my-group">
                             <label>&nbsp;</label>
-                            <select id="lunch" class="selectpicker form-control" data-live-search="true" title="Please select an option ...">
+                            <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                              title="Please select an option ...">
+                              <option>Option 1</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                              <option>Option 4</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="input-group my-group">
+                        <label>Route Of Admin</label>
+                        <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                          title="Please select an option ...">
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                          <option>Option 4</option>
+                        </select>
+                      </div>
+                      <div class="input-group">
+                        <label>Frequency</label>
+                        <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group">
+                        <label>Frequency Text</label>
+                        <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group">
+                        <label>Therapy Start Date</label>
+                        <input type="date" required class="form-control" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group">
+                        <label>Therapy Start Date Text</label>
+                        <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="input-group">
+                            <label>Duration </label>
+                            <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                          </div>
+                        </div>
+                        <div class="input-group my-group">
+                          <label>&nbsp;</label>
+                          <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                            title="Please select an option ...">
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                            <option>Option 4</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="input-group">
+                            <label>Unit Dose </label>
+                            <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                          </div>
+                        </div>
+                        <div class="input-group my-group">
+                          <label>&nbsp;</label>
+                          <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                            title="Please select an option ...">
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                            <option>Option 4</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="input-group">
+                            <label>Total Dose</label>
+                            <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                          </div>
+                        </div>
+                        <div class="input-group my-group">
+                          <label>&nbsp;</label>
+                          <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                            title="Please select an option ...">
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                            <option>Option 4</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input-group">
+                        <label>Form Of Admin Text</label>
+                        <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group my-group">
+                        <label>Parent's Route Of Admin</label>
+                        <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                          title="Please select an option ...">
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                          <option>Option 4</option>
+                        </select>
+                      </div>
+                      <div class="input-group">
+                        <label>Route Of Admin Text</label>
+                        <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="input-group">
+                            <label>Frequency Time</label>
+                            <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="input-group my-group">
+                            <label>&nbsp;</label>
+                            <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                              title="Please select an option ...">
+                              <option>Option 1</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                              <option>Option 4</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="input-group my-group">
+                            <label>Drug Start Classification</label>
+                            <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                              title="Please select an option ...">
+                              <option>Option 1</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                              <option>Option 4</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="input-group my-group">
+                            <label>&nbsp;</label>
+                            <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                              title="Please select an option ...">
+                              <option>Option 1</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                              <option>Option 4</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="input-group">
+                        <label>Therapy End Date</label>
+                        <input type="date" required class="form-control" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group">
+                        <label>Therapy End Date Text</label>
+                        <input type="date" required class="form-control" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group">
+                        <label>Duration Text</label>
+                        <input type="date" required class="form-control" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group">
+                        <label>Daily Dose</label>
+                        <input type="date" required class="form-control" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group">
+                        <label>Over Dose</label>
+                        <label class="radio-inline">
+                          <input type="radio" value="">Yes
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" value="">No
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="input-group">
+                        <label>Dosage Text</label>
+                        <textarea></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="input-group my-group">
+                        <label>Therapy Site</label>
+                        <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                          title="Please select an option ...">
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                          <option>Option 4</option>
+                        </select>
+                      </div>
+                      <div class="input-group my-group">
+                        <label>AE Occurred Dose</label>
+                        <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                          title="Please select an option ...">
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                          <option>Option 4</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input-group">
+                        <label>NDC No</label>
+                        <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group">
+                        <label>AE Occ. Dose Overlay</label>
+                        <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group">
+                        <label>End Overlay</label>
+                        <input disabled type="text" required class="form-control" aria-describedby="basic-addon1">
+                      </div>
+                    </div>
+                  </div>
+                  <div style="margin-top: 10px;" class="panel-group" id="lotNoInfo">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#lotNoInfo" href="#lotNoInfoTab">
+                            Lot No Information
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="lotNoInfoTab" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="input-group">
+                                <label>Batch/Lot No</label>
+                                <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                              </div>
+                              <div class="input-group">
+                                <label>Device batch Lot Number</label>
+                                <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                              </div>
+                              <div class="input-group">
+                                <label>Term ID</label>
+                                <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="input-group">
+                                <label>Expiry Date Text</label>
+                                <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                              </div>
+                              <div class="input-group">
+                                <label>Device Component Name</label>
+                                <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                              </div>
+                              <div class="input-group">
+                                <label>Term ID Version Date/Number</label>
+                                <input type="number" required class="form-control" aria-describedby="basic-addon1">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="margin-top: 10px;" class="panel-group" id="routeAdmin">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#routeAdmin" href="#routeAdminTab">
+                            Route Of Admin
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="routeAdminTab" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="input-group">
+                                <label>Term ID</label>
+                                <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              Term ID Version Date/Number
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="input-group">
+                                <label>Parent Route Of Admin Text</label>
+                                <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="margin-top: 10px;" class="panel-group" id="pharmaSoftDose">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#pharmaSoftDose" href="#pharmaSoftDoseTab">
+                            Pharmaceutical Dose Form
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="pharmaSoftDoseTab" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="input-group">
+                                <label>Term ID</label>
+                                <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              Term ID Version Date/Number
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="input-group">
+                                <label>Pharmaceutical Dose Form Admin Text</label>
+                                <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel-group" id="additionalInfo">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#additionalInfo" href="#additionalInfoTab">
+                    Additional Info
+                  </a>
+                </h4>
+              </div>
+              <div id="additionalInfoTab" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="input-group">
+                        <label>Is The Product Compounded ?</label>
+                        <label class="radio-inline">
+                          <input type="radio" value="">Yes
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" value="">No
+                        </label>
+                      </div>
+                      <div class="input-group">
+                        <label>Interacting Drug</label>
+                        <label class="radio-inline">
+                          <input type="radio" value="">Yes
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" value="">No
+                        </label>
+                      </div>
+                      <div class="input-group my-group">
+                        <label>End Therapy</label>
+                        <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                          title="Please select an option ...">
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                          <option>Option 4</option>
+                        </select>
+                      </div>
+                      <div class="input-group my-group">
+                        <label>Country Obtained</label>
+                        <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                          title="Please select an option ...">
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                          <option>Option 4</option>
+                        </select>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="input-group">
+                            <label>Total Period</label>
+                            <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="input-group my-group">
+                            <label>&nbsp;</label>
+                            <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                              title="Please select an option ...">
+                              <option>Option 1</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                              <option>Option 4</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="input-group">
+                        <label>Internal Drug Code</label>
+                        <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group my-group">
+                        <label>Study Product Type</label>
+                        <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                          title="Please select an option ...">
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                          <option>Option 4</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input-group">
+                        <label>OTC Product</label>
+                        <label class="radio-inline">
+                          <input type="radio" value="">Yes
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" value="">No
+                        </label>
+                      </div>
+                      <div class="input-group">
+                        <label>Reported For </label>
+                        <label class="radio-inline">
+                          <input type="radio" value="">Parent
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" value="">Patient
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" value="">Brother
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" value="">Sister
+                        </label>
+                      </div>
+                      <div class="input-group">
+                        <label>Biological Father Exposed To Drug</label>
+                        <label class="checkbox-inline">
+                          <input type="checkbox" value="">
+                        </label>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="input-group">
+                            <label>Gestation Period</label>
+                            <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="input-group my-group">
+                            <label>&nbsp;</label>
+                            <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                              title="Please select an option ...">
+                              <option>Option 1</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                              <option>Option 4</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="input-group">
+                            <label>Cumilative Dose To First Reaction</label>
+                            <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="input-group my-group">
+                            <label>&nbsp;</label>
+                            <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                              title="Please select an option ...">
+                              <option>Option 1</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                              <option>Option 4</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="input-group">
+                            <label>Made By</label>
+                            <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="input-group my-group">
+                            <label>&nbsp;</label>
+                            <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                              title="Please select an option ...">
+                              <option>Option 1</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                              <option>Option 4</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="input-group">
+                            <label>Product Obtained From</label>
+                            <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="input-group my-group">
+                            <label>&nbsp;</label>
+                            <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                              title="Please select an option ...">
+                              <option>Option 1</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                              <option>Option 4</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="input-group">
+                        <label>Additional Drug Information</label>
+                        <textarea></textarea>
+                      </div>
+                      <div class="input-group">
+                        <label>Combined CDC</label>
+                        <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="input-group my-group">
+                        <label>Exposure To Child</label>
+                        <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                          title="Please select an option ...">
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                          <option>Option 4</option>
+                        </select>
+                      </div>
+                      <div class="input-group my-group">
+                        <label>Japanese Cosmetic Product Type</label>
+                        <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                          title="Please select an option ...">
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                          <option>Option 4</option>
+                        </select>
+                      </div>
+                      <div class="input-group my-group">
+                        <label>Prior Use Of Equilvalent Drug</label>
+                        <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                          title="Please select an option ...">
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                          <option>Option 4</option>
+                        </select>
+                      </div>
+                      <div class="input-group">
+                        <label>Total Period Text</label>
+                        <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input-group">
+                        <label>Patient Exposed To Product</label>
+                        <label class="radio-inline">
+                          <input type="radio" value="">Yes
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" value="">No
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" value="">Unknown
+                        </label>
+                      </div>
+                      <div class="input-group my-group">
+                        <label>Product Class</label>
+                        <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                          title="Please select an option ...">
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                          <option>Option 4</option>
+                        </select>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="input-group">
+                            <label>Dose No In Series</label>
+                            <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="input-group my-group">
+                            <label>&nbsp;</label>
+                            <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                              title="Please select an option ...">
+                              <option>Option 1</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                              <option>Option 4</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="input-group my-group">
+                            <label>Physician Directed</label>
+                            <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                              title="Please select an option ...">
+                              <option>Option 1</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                              <option>Option 4</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="input-group">
+                        <label>Product Group Name</label>
+                        <input disabled type="text" required class="form-control" aria-describedby="basic-addon1">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="input-group">
+                        <label>Tolerated?</label>
+                        <label class="radio-inline">
+                          <input type="radio" value="">Yes
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" value="">No
+                        </label>
+                      </div>
+                      <div class="input-group my-group">
+                        <label>Tolerated By Other Patient?</label>
+                        <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                          title="Please select an option ...">
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                          <option>Option 4</option>
+                        </select>
+                      </div>
+                      <div class="input-group my-group">
+                        <label>Samples Provided To Authority?</label>
+                        <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                          title="Please select an option ...">
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                          <option>Option 4</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input-group my-group">
+                        <label>Prior Use</label>
+                        <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                          title="Please select an option ...">
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                          <option>Option 4</option>
+                        </select>
+                      </div>
+                      <div class="input-group my-group">
+                        <label>Misuse Of This Product?</label>
+                        <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                          title="Please select an option ...">
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                          <option>Option 4</option>
+                        </select>
+                      </div>
+                      <div class="input-group">
+                        <label>First Awareness Date</label>
+                        <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="input-group">
+                        <label>Dosage Comment</label>
+                        <textarea></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="input-group">
+                        <label>Use Drug Duration At Therapy Level</label>
+                        <label class="checkbox-inline">
+                          <input type="checkbox" value="">
+                        </label>
+                      </div>
+                      <div class="input-group">
+                        <label>Mfr Number</label>
+                        <input disabled type="text" required class="form-control" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group">
+                        <label>Product Available For Evaluation?</label>
+                        <label class="radio-inline">
+                          <input type="radio" value="">Yes
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" value="">No
+                        </label>
+                      </div>
+                      <div class="input-group">
+                        <label>Returned To Manufacturer on</label>
+                        <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group my-group">
+                        <label>Registration Category</label>
+                        <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                          title="Please select an option ...">
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                          <option>Option 4</option>
+                        </select>
+                      </div>
+                      <div class="input-group">
+                        <label>Registration Sub Category</label>
+                        <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group">
+                        <label>Expiration Date</label>
+                        <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input-group">
+                        <label>Drug Used To Treat At Medical Condition</label>
+                        <label class="checkbox-inline">
+                          <input type="checkbox" value="">
+                        </label>
+                      </div>
+                      <div class="input-group">
+                        <label>UF/Importer Number</label>
+                        <input disabled type="text" required class="form-control" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group">
+                        <label>Product Returned?</label>
+                        <label class="radio-inline">
+                          <input type="radio" value="">Yes
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" value="">No
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" value="">Unknown
+                        </label>
+                      </div>
+                      <div class="input-group">
+                        <label>Same Or Similar To Product</label>
+                        <input disabled type="text" required class="form-control" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group">
+                        <label>Registration Category Text</label>
+                        <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group">
+                        <label>Is Product A Combination Product</label>
+                        <label class="checkbox-inline">
+                          <input type="checkbox" value="">
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel-group" id="additionalInfoCode">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#additionalInfoCode" href="#additionalInfoCodeTab">
+                            Additional Info Code
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="additionalInfoCodeTab" class="panel-collapse collapse">
+                        <div class="input-group my-group">
+                          <label>Reporter Type</label>
+                          <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                            title="Please select an option ...">
+                            <option>Abuse</option>
+                            <option>Batch and lot tested and found notwithin specifications</option>
+                            <option>Batch and lot tested and found within specifications</option>
+                            <option>Counterfit</option>
+                            <option>Drug taken beyond expiry date</option>
+                            <option>Drug taken by the father</option>
+                            <option>Medication Error</option>
+                            <option>Misuse</option>
+                            <option>Occupational Exposure</option>
+                            <option>Off label use</option>
+                            <option>Overdose</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel-group" id="lotNo">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#lotNo" href="#lotNoTab">
+                    App. No /Lot No
+                  </a>
+                </h4>
+              </div>
+              <div id="lotNoTab" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="input-group my-group">
+                        <label>Country</label>
+                        <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                          title="Please select an option ...">
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                          <option>Option 4</option>
+                        </select>
+                      </div>
+                      <div class="input-group">
+                        <label>Local tradename</label>
+                        <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group my-group">
+                        <label>Approval Type</label>
+                        <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                          title="Please select an option ...">
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                          <option>Option 4</option>
+                        </select>
+                      </div>
+                      <div class="input-group">
+                        <label>Approval No</label>
+                        <input type="number" required class="form-control" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group my-group">
+                        <label>Submission Type</label>
+                        <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                          title="Please select an option ...">
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                          <option>Option 4</option>
+                        </select>
+                      </div>
+                      <div class="input-group">
+                        <label>Product Type</label>
+                        <label class="radio-inline">
+                          <input type="radio" value="">Drug
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" value="">Vaccine
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" value="">Device
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" value="">Cosmetic
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" value="">Combination
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="input-group">
+                        <label>Marketing Authorization Holder</label>
+                        <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input-group my-group">
+                        <label>&nbsp;</label>
+                        <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                          title="Please select an option ...">
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                          <option>Option 4</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="input-group">
+                        <label>MAH Received Via Import</label>
+                        <textarea></textarea>
+                      </div>
+                      <div class="input-group">
+                        <label>Identification Of Notified Body</label>
+                        <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="input-group my-group">
+                        <label>Class Of Device MDD/AMDD</label>
+                        <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                          title="Please select an option ...">
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                          <option>Option 4</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input-group my-group">
+                        <label>Role Of Authority</label>
+                        <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                          title="Please select an option ...">
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                          <option>Option 4</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="input-group">
+                        <label>Package Information</label>
+                        <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="input-group">
+                        <label>Medicinal Product ID</label>
+                        <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group">
+                        <label>Scientific Name</label>
+                        <textarea></textarea>
+                      </div>
+                      <div class="input-group">
+                        <label>Strength Name</label>
+                        <textarea></textarea>
+                      </div>
+                      <div class="input-group">
+                        <label>Trademark Name</label>
+                        <textarea></textarea>
+                      </div>
+                      <div class="input-group">
+                        <label>Device Name</label>
+                        <textarea></textarea>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input-group">
+                        <label>MP ID Version Date Number</label>
+                        <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group">
+                        <label>Inverted Name</label>
+                        <textarea></textarea>
+                      </div>
+                      <div class="input-group">
+                        <label>Form Name</label>
+                        <textarea></textarea>
+                      </div>
+                      <div class="input-group">
+                        <label>Intended Use Name</label>
+                        <textarea></textarea>
+                      </div>
+                      <div class="input-group">
+                        <label>Container Name</label>
+                        <textarea></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="input-group">
+                        <label>Company Product Code</label>
+                        <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                      </div>
+                    </div>
+                  </div>
+                  <div style="margin-top: 10px;" class="panel-group" id="lotNoInfo1">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#lotNoInfo1" href="#lotNoInfo1Tab">
+                            Lot No. Information
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="lotNoInfo1Tab" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="input-group">
+                                <label>Batch/Lot No</label>
+                                <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                              </div>
+                              <div class="input-group">
+                                <label>Device Batch Lot No</label>
+                                <input disabled type="text" required class="form-control" aria-describedby="basic-addon1">
+                              </div>
+                              <div class="input-group">
+                                <label>Term Id</label>
+                                <input disabled type="text" required class="form-control" aria-describedby="basic-addon1">
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="input-group">
+                                <label>Expiry Date</label>
+                                <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                              </div>
+                              <div class="input-group">
+                                <label>Device Component Name</label>
+                                <input disabled type="text" required class="form-control" aria-describedby="basic-addon1">
+                              </div>
+                              <div class="input-group">
+                                <label>Term Id Version DateNumber</label>
+                                <input disabled type="text" required class="form-control" aria-describedby="basic-addon1">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel-group" id="ingredient">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#ingredient" href="#ingredientTab">
+                    Ingredient
+                  </a>
+                </h4>
+              </div>
+              <div id="ingredientTab" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th>Primary Active</th>
+                            <th>Substance Name</th>
+                            <th>CDC</th>
+                            <th>CAS number</th>
+                            <th>Strength</th>
+                            <th>Strength Unit</th>
+                            <th>Manual</th>
+                            <th>Term ID</th>
+                            <th>Term ID Version Date/Number</th>
+                            <th>Class Of Ingredient</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <ul class="list-buttons">
+                        <li>
+                          <button type="button" class="btn btn-default">Add</button>
+                          <button type="button" class="btn btn-default">Delete</button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel-group" id="jStudies">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#jStudies" href="#jStudiesTab">
+                    J.12 Studies
+                  </a>
+                </h4>
+              </div>
+              <div id="jStudiesTab" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="panel-group" id="jStudiesInfo">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#jStudiesInfo" href="#jStudiesInfoTab">
+                            J.12- Study Information
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="jStudiesInfoTab" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="input-group">
+                                <label>CT Notification Submission Times</label>
+                                <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                              </div>
+                              <div class="input-group">
+                                <label>Targeted Diseases</label>
+                                <textarea></textarea>
+                              </div>
+                              <div class="input-group my-group">
+                                <label>Study Phase</label>
+                                <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                                  title="Please select an option ...">
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                  <option>Option 4</option>
+                                </select>
+                              </div>
+                              <div class="input-group">
+                                <label>Patient Under Treatment</label>
+                                <label class="radio-inline">
+                                  <input type="radio" value="">Yes
+                                </label>
+                                <label class="radio-inline">
+                                  <input type="radio" value="">No
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel-group" id="bioProducts">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#bioProducts" href="#bioProductsTab">
+                    Biological Products
+                  </a>
+                </h4>
+              </div>
+              <div id="bioProductsTab" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="panel-group" id="bioProductsInfo">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#bioProductsInfo" href="#bioProductsInfoTab">
+                            General Information
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="bioProductsInfoTab" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="input-group">
+                                <label>BPD Code</label>
+                                <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="input-group">
+                                <label class="radio-inline">
+                                  <input type="radio" value="">Blood Product
+                                </label>
+                                <label class="radio-inline">
+                                  <input type="radio" value="">Non Blood Product
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="input-group">
+                                <label>Reporting Establishment</label>
+                                <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="input-group">
+                                <label>&nbsp;</label>
+                                <input disabled type="text" required class="form-control" aria-describedby="basic-addon1">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="input-group">
+                                <label>BPD Occurence Facility</label>
+                                <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="input-group">
+                                <label>&nbsp;</label>
+                                <input disabled type="text" required class="form-control" aria-describedby="basic-addon1">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel-group" id="bioProductsInfo1">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#bioProductsInfo1" href="#bioProductsInfo1Tab">
+                            Biological Product Information
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="bioProductsInfo1Tab" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="input-group">
+                                <label>Unit/Lot No.</label>
+                                <input type="number" required class="form-control" aria-describedby="basic-addon1">
+                              </div>
+                              <div class="input-group">
+                                <label>Product Code</label>
+                                <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="input-group">
+                                <label>Expiration Date</label>
+                                <input type="date" required class="form-control" aria-describedby="basic-addon1">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="input-group">
+                                <label>Other Comments</label>
+                                <textarea></textarea>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel-group" id="bloodProduct">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#bloodProduct" href="#bloodProductTab">
+                            Blood Product
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="bloodProductTab" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="input-group">
+                                <label>Collection Date</label>
+                                <input type="date" required class="form-control" aria-describedby="basic-addon1">
+                              </div>
+                              <div class="input-group my-group">
+                                <label>Disposition Method</label>
+                                <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                                  title="Please select an option ...">
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                  <option>Option 4</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="input-group my-group">
+                                <label>Unit Distributed</label>
+                                <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                                  title="Please select an option ...">
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                  <option>Option 4</option>
+                                </select>
+                              </div>
+                              <div class="input-group">
+                                <label>Notified To Consigne</label>
+                                <label class="radio-inline">
+                                  <input type="radio" value="">Yes
+                                </label>
+                                <label class="radio-inline">
+                                  <input type="radio" value="">No
+                                </label>
+                                <label class="radio-inline">
+                                  <input type="radio" value="">RN(Reverse Notification)
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel-group" id="nonBloodProduct">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#nonBloodProduct" href="#nonBloodProductTab">
+                            Non Blood Product
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="nonBloodProductTab" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="input-group my-group">
+                                <label>Product Type</label>
+                                <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                                  title="Please select an option ...">
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                  <option>Option 4</option>
+                                </select>
+                              </div>
+                              <div class="input-group">
+                                <label>Notified To Consigne</label>
+                                <label class="radio-inline">
+                                  <input type="radio" value="">Yes
+                                </label>
+                                <label class="radio-inline">
+                                  <input type="radio" value="">No
+                                </label>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="input-group my-group">
+                                <label>Disposition Method</label>
+                                <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                                  title="Please select an option ...">
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                  <option>Option 4</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel-group" id="compliantResolution">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#compliantResolution" href="#compliantResolutionTab">
+                            Compliant Resolution
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="compliantResolutionTab" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="input-group">
+                                <label>Root Cause</label>
+                                <textarea></textarea>
+                              </div>
+                              <div class="input-group">
+                                <label>Corrective Action</label>
+                                <textarea></textarea>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel-group" id="cosemtics">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#cosemtics" href="#cosemticsTab">
+                    Cosemtics
+                  </a>
+                </h4>
+              </div>
+              <div id="cosemticsTab" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="panel-group" id="formulation">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#formulation" href="#formulationTab">
+                            Formulation
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="formulationTab" class="panel-collapse collapse">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="input-group">
+                              <label>Formulation ID</label>
+                              <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                            </div>
+                            <div class="input-group my-group">
+                              <label>Cosmetic Category</label>
+                              <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                                title="Please select an option ...">
                                 <option>Option 1</option>
                                 <option>Option 2</option>
                                 <option>Option 3</option>
                                 <option>Option 4</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-md-3">
-                          <div class="input-group">
-                            <label class="checkbox-inline">
-                              <input type="checkbox" value="">Manual
-                            </label>
+                              </select>
+                            </div>
+                            <div class="input-group my-group">
+                              <label>Cosmetic Product Type</label>
+                              <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                                title="Please select an option ...">
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                                <option>Option 3</option>
+                                <option>Option 4</option>
+                              </select>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="col-md-6">
-                      <div class="input-group my-group">
-                        <label>Route Of Administration 2</label>
-                        <select id="lunch" class="selectpicker form-control" data-live-search="true" title="Please select an option ...">
-                            <option>Option 1</option>
-                            <option>Option 2</option>
-                            <option>Option 3</option>
-                            <option>Option 4</option>
-                        </select>
+                  </div>
+                  <div class="panel-group" id="cosmeticIngredient">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#cosmeticIngredient" href="#cosmeticIngredientTab">
+                            Ingredient
+                          </a>
+                        </h4>
                       </div>
-                      <div class="input-group">
-                        <label>LOT No</label>
-                        <input type=“text” required class="form-control"
-                          aria-describedby="basic-addon1">
-                      </div>
-                      <div class="input-group">
-                        <label>Therapy Start Date Text</label>
-                        <input type=“text” required class="form-control"
-                          aria-describedby="basic-addon1">
-                      </div>
-                      <div class="input-group">
-                        <label>Therapy End Date Text</label>
-                        <input type=“text” required class="form-control"
-                          aria-describedby="basic-addon1">
-                      </div>
-                      <div class="input-group">
-                        <label>Duration Text</label>
-                        <input type=“text” required class="form-control"
-                          aria-describedby="basic-addon1">
+                      <div id="cosmeticIngredientTab" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <table class="table table-bordered">
+                                <thead>
+                                  <tr>
+                                    <th>Substance Name</th>
+                                    <th>Strength</th>
+                                    <th>Strength Unit</th>
+                                    <th>Vehicle</th>
+                                    <th>pH</th>
+                                    <th>CAS Number</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <ul class="list-buttons">
+                                <li>
+                                  <button class="btn btn-default">Add</button>
+                                  <button class="btn btn-default">Delete</button>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -490,7 +3033,6 @@
               </div>
             </div>
           </div>
-
         </div>
       </div>
       <button style="margin: 10px;" type="button" class="btn btn-default">Save</button>

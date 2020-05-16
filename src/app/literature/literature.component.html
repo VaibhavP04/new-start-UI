@@ -6,9 +6,171 @@
           <a class="accordion-toggle" data-toggle="collapse" data-parent="#literature" href="#litTab">
             Literature
           </a>
+          <a class="no-icon" data-toggle="modal" data-target="#myModal">
+            Literature Documents
+          </a>
+          <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">AER Literature Document List</h4>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <ul class="list-buttons">
+                        <li>
+                          <button type="button" class="btn btn-default" data-toggle="modal" data-target="#newModal">New</button>
+                          <button type="button" class="btn btn-default">View</button>
+                          <button type="button" class="btn btn-default">Update</button>
+                          <button type="button" class="btn btn-default">Delete</button>
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </li>
+                      </ul>
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th>Source</th>
+                            <th>Category</th>
+                            <th>Format</th>
+                            <th>File Name</th>
+                            <th>Date</th>
+                            <th>File Size</th>
+                            <th>Description</th>
+                            <th>Date Created</th>
+                            <th>Date Modified</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="modal fade" id="newModal" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Document Management</h4>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="input-group my-group">
+                        <label>Document Source</label>
+                        <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                          title="Please select an option ...">
+                          <option>email</option>
+                          <option>E2B import</option>
+                          <option>E2B R2+</option>
+                          <option>Fax</option>
+                          <option>FEDEX</option>
+                          <option>Generated Report of</option>
+                          <option>Log Sheet</option>
+                          <option>Mail</option>
+                          <option>R3 import</option>
+                          <option>Unknown</option>
+                          <option>UPS</option>
+                          <option>VAER Import</option>
+                        </select>
+                      </div>
+                      <div class="input-group my-group">
+                        <label>Document Category</label>
+                        <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                          title="Please select an option ...">
+                          <option>Call Center</option>
+                          <option>CIOMS | Report</option>
+                          <option>Death Certificate</option>
+                          <option>Discharge Summary</option>
+                          <option>DUP</option>
+                          <option>E2B Import Logs</option>
+                          <option>E2B summary sheet</option>
+                          <option>Fax</option>
+                          <option>Generated report of</option>
+                          <option>Laboratory Report</option>
+                          <option>Literature Report</option>
+                          <option>Log Sheet</option>
+                          <option>Medical Information Technology</option>
+                          <option>Medical Records</option>
+                          <option>MedWatch Report</option>
+                          <option>Miscellaneous</option>
+                          <option>Past Market Adverse Event</option>
+                          <option>Past Market Call Log</option>
+                          <option>Queries</option>
+                          <option>Report Acknowledgements</option>
+                        </select>
+                      </div>
+                      <div class="input-group">
+                        <label>Document Received Date</label>
+                        <input type="date" required class="form-control" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group">
+                        <label>Attached File Name</label>
+                        <input disabled type="text" required class="form-control" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group">
+                        <label>File Name</label>
+                        <input type="file" required class="form-control" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group my-group">
+                        <label>Document Format</label>
+                        <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                          title="Please select an option ...">
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                          <option>Option 4</option>
+                        </select>
+                      </div>
+                      <div class="input-group my-group">
+                        <label>Privacy Type</label>
+                        <div class="input-group">
+                          <label class="radio-inline">
+                            <input type="radio" value="">Public
+                          </label>
+                          <label class="radio-inline">
+                            <input type="radio" value="">Private
+                          </label>
+                        </div>
+                      </div>
+                      <div class="input-group">
+                        <label>Description</label>
+                        <textarea></textarea>
+                      </div>
+                      <ul class="list-buttons">
+                        <li>
+                          <button class="btn btn-default">View</button>
+                          <button class="btn btn-default" data-dismiss="modal">Save</button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </h4>
       </div>
-      <div id="litTab" class="panel-collapse collapse in">
+      <div id="litTab" class="panel-collapse collapse">
         <div class="panel-body">
           <div class="panel-group" id="literatureInner">
             <div class="panel panel-default">
@@ -19,7 +181,7 @@
                   </a>
                 </h4>
               </div>
-              <div id="literatureInnerTab" class="panel-collapse collapse in">
+              <div id="literatureInnerTab" class="panel-collapse collapse">
                 <div class="panel-body">
                   <div class="row">
                     <div class="col-md-12">
@@ -146,7 +308,7 @@
                   </a>
                 </h4>
               </div>
-              <div id="authorInfoTab" class="panel-collapse collapse in">
+              <div id="authorInfoTab" class="panel-collapse collapse">
                 <div class="panel-body">
                   <div class="row">
                     <div class="col-md-12">

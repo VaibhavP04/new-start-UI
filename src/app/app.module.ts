@@ -19,6 +19,8 @@ import { CommentsComponent } from './comments/comments.component';
 import { LiteratureComponent } from './literature/literature.component';
 import { LabDataComponent } from './labData/lab-data.component';
 import { ProductComponent } from './product/product.component';
+import { FullDataEntryComponent } from './full-data-entry/full-data-entry.component';
+import { AffiliateReportingComponent } from './affiliate-reporting/affiliate-reporting.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,8 @@ import { ProductComponent } from './product/product.component';
     LiteratureComponent,
     LabDataComponent,
     ProductComponent,
+    FullDataEntryComponent,
+    AffiliateReportingComponent
   ],
   imports: [
     BrowserModule,
