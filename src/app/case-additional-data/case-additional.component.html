@@ -1,0 +1,40 @@
+<div class="container-fluid">
+  <div class="panel-group" id="caseAdditional">
+    <div class="panel panel-default">
+      <div class="panel-heading header">
+        <h4 class="panel-title">
+          <a class="accordion-toggle" data-toggle="collapse" data-parent="#caseAdditional" href="#caseAdditionalTab">
+            Case Additional Data
+          </a>
+        </h4>
+      </div>
+      <div id="caseAdditionalTab" class="panel-collapse collapse">
+        <div class="panel-body">
+          <div class="row">
+            <div class="input-group">
+              <label>Additional documents available ?</label>
+              <label class="radio-inline">
+                <input type="radio" value="yes" (click)="showDocuments($event)">Yes<br>
+              </label>
+              <label class="radio-inline">
+                <input type="radio" value="no" (click)="showDocuments($event)">No
+              </label>
+            </div>
+            <div class="input-group">
+              <label>File Name</label>
+              <input type="file" required class="form-control" aria-describedby="basic-addon1">
+            </div>
+          </div>
+          <div class="row" *ngIf="showField">
+            <div class="col-md-12">
+              <div class="input-group">
+                <label>Document Name</label>
+                <input type="text" required class="form-control" aria-describedby="basic-addon1">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -10,6 +10,14 @@
       </div>
       <div id="therapeuticTab" class="panel-collapse collapse">
         <div class="panel-body">
+          <div style="margin: 10px 0;" class="input-group my-group">
+            <label>&nbsp;</label>
+            <select id="lunch" class="selectpicker form-control" data-live-search="true"
+              title="Please select an option ...">
+              <option>Patient</option>
+              <option>Parent</option>
+            </select>
+          </div>
           <div class="panel-group" id="pastDrugs">
             <div class="panel panel-default">
               <div class="panel-heading">
@@ -51,84 +59,7 @@
               </div>
             </div>
           </div>
-          <!-- <div class="panel-group" id="pastIndicationForDrug">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#pastIndicationForDrug"
-                    href="#pastIndicationForDrugTab">
-                    Past Indication For Past Drug
-                  </a>
-                </h4>
-              </div>
-              <div id="pastIndicationForDrugTab" class="panel-collapse collapse">
-                <div class="panel-body">
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="input-group">
-                        <label>Indication Term</label>
-                        <input type=“text” required class="form-control"
-                          aria-describedby="basic-addon1">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="input-group">
-                        <label>LLT Code</label>
-                        <input type=“text” required class="form-control"
-                          aria-describedby="basic-addon1">
-                      </div>
-                      <div class="input-group">
-                        <label>PT Code</label>
-                        <input type=“text” required class="form-control"
-                          aria-describedby="basic-addon1">
-                      </div>
-                      <div class="input-group">
-                        <label>SOC Code</label>
-                        <input type=“text” disabled required class="form-control"
-                          aria-describedby="basic-addon1">
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="input-group">
-                        <label>&nbsp;</label>
-                        <input type=“text” required class="form-control"
-                          aria-describedby="basic-addon1">
-                      </div>
-                      <div class="input-group">
-                        <label>&nbsp;</label>
-                        <input type=“text” required class="form-control"
-                          aria-describedby="basic-addon1">
-                      </div>
-                      <div class="input-group">
-                        <label>&nbsp;</label>
-                        <input type=“text” disabled required class="form-control"
-                          aria-describedby="basic-addon1">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="input-group">
-                        <label>MedDRA Version</label>
-                        <input type="text" disabled required class="form-control"
-                          aria-describedby="basic-addon1">
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <div class="input-group">
-                        <label>Coding Type</label>
-                        <input type="text" disabled required class="form-control"
-                          aria-describedby="basic-addon1">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="panel-group" id="pastReaction">
+          <!-- <div class="panel-group" id="pastReaction">
             <div class="panel panel-default">
               <div class="panel-heading">
                 <h4 class="panel-title">
@@ -212,153 +143,4 @@
 </div>
 
 
-<div class="container-fluid">
-  <div class="panel-group header" id="disease">
-    <div class="panel panel-default">
-      <div class="panel-heading header">
-        <h4 class="panel-title">
-          <a class="accordion-toggle" data-toggle="collapse" data-parent="#disease" href="#diseaseTab">
-            Disease
-          </a>
-        </h4>
-      </div>
-      <div id="diseaseTab" class="panel-collapse collapse">
-        <div class="panel-body">
-          <div class="panel-group" id="medicalHistory">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#medicalHistory"
-                    href="#medicalHistoryTab">
-                    Medical History
-                  </a>
-                </h4>
-              </div>
-              <div id="medicalHistoryTab" class="panel-collapse collapse">
-                <div class="panel-body">
-                  <div class="panel-group" id="medication">
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4 class="panel-title">
-                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#medication"
-                            href="#medicationTab">
-                            Medication
-                          </a>
-                        </h4>
-                      </div>
-                      <div id="medicationTab" class="panel-collapse collapse">
-                        <div class="panel-body">
-                          <div class="row">
-                            <div class="col-md-12">
-                              <label class="radio-inline">
-                                <input type="radio" name="optradio">Concomitant
-                              </label>
-                              <label class="radio-inline">
-                                <input type="radio" name="optradio">Basic
-                              </label>
-                              <label class="radio-inline">
-                                <input type="radio" name="optradio">Current Disease
-                              </label>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-md-6">
-                              <div class="input-group my-group">
-                                <label>History Of Abuse Or Dependence</label>
-                                <select id="lunch" class="selectpicker form-control" data-live-search="true"
-                                  title="Please select an option ...">
-                                  <option>Option 1</option>
-                                  <option>Option 2</option>
-                                  <option>Option 3</option>
-                                  <option>Option 4</option>
-                                </select>
-                              </div>
-                              <div class="input-group">
-                                <label>Disease Term</label>
-                                <input type=“text” required class="form-control" aria-describedby="basic-addon1">
-                              </div>
-                              <div class="input-group">
-                                <label>LLT Code</label>
-                                <input type=“text” required class="form-control" aria-describedby="basic-addon1">
-                              </div>
-                              <div class="input-group">
-                                <label>PT Code</label>
-                                <input type=“text” required class="form-control" aria-describedby="basic-addon1">
-                              </div>
-                              <div class="input-group">
-                                <label>SOC Code</label>
-                                <input type=“text” disabled required class="form-control"
-                                  aria-describedby="basic-addon1">
-                              </div>
-                              <div class="input-group">
-                                <label>MedDRA Version</label>
-                                <input type=“text” disable required class="form-control"
-                                  aria-describedby="basic-addon1">
-                              </div>
-                              <div class="input-group">
-                                <label>Coding Type</label>
-                                <input type=“text” required class="form-control" aria-describedby="basic-addon1">
-                              </div>
-                              <div class="input-group">
-                                <label>Start Date</label>
-                                <input type="date" required class="form-control" aria-describedby="basic-addon1">
-                              </div>
-                              <div class="input-group">
-                                <label>End Date</label>
-                                <input type="date" required class="form-control" aria-describedby="basic-addon1">
-                              </div>
-                            </div>
-                            <div class="col-md-6">
-                              <div class="input-group my-group">
-                                <label>Patient/Parent</label>
-                                <select id="lunch" class="selectpicker form-control" data-live-search="true"
-                                  title="Please select an option ...">
-                                  <option>Option 1</option>
-                                  <option>Option 2</option>
-                                  <option>Option 3</option>
-                                  <option>Option 4</option>
-                                </select>
-                              </div>
-                              <div class="input-group">
-                                <label>&nbsp;</label>
-                                <input type=“text” disabled required class="form-control"
-                                  aria-describedby="basic-addon1">
-                              </div>
-                              <div class="input-group">
-                                <label>&nbsp;</label>
-                                <input type=“text” disabled required class="form-control"
-                                  aria-describedby="basic-addon1">
-                              </div>
-                              <div class="input-group">
-                                <label>&nbsp;</label>
-                                <input type=“text” disabled required class="form-control"
-                                  aria-describedby="basic-addon1">
-                              </div>
-                              <div class="input-group">
-                                <label>Continuing?</label>
-                                <input type=“text” disabled required class="form-control"
-                                  aria-describedby="basic-addon1">
-                              </div>
-                              <div class="input-group">
-                                <label>Family History</label>
-                                <input type="radio" required class="form-control" aria-describedby="basic-addon1">
-                              </div>
-                              <div class="input-group">
-                                <label>Disease Comments</label>
-                                <textarea required class="form-control" aria-describedby="basic-addon1"></textarea>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+

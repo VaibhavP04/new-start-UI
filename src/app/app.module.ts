@@ -21,6 +21,8 @@ import { LabDataComponent } from './labData/lab-data.component';
 import { ProductComponent } from './product/product.component';
 import { FullDataEntryComponent } from './full-data-entry/full-data-entry.component';
 import { AffiliateReportingComponent } from './affiliate-reporting/affiliate-reporting.component';
+import { CaseAdditionalComponent } from './case-additional-data/case-additional.component';
+import { InvestigatorComponent } from './investigator/investigator.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { AffiliateReportingComponent } from './affiliate-reporting/affiliate-rep
     LabDataComponent,
     ProductComponent,
     FullDataEntryComponent,
-    AffiliateReportingComponent
+    AffiliateReportingComponent,
+    CaseAdditionalComponent,
+    InvestigatorComponent
   ],
   imports: [
     BrowserModule,

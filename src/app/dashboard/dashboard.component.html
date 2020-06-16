@@ -107,16 +107,58 @@
     </div>
   </nav>
   <div *ngIf="toggle">
-    <app-affiliate-reporting></app-affiliate-reporting>
-    <app-full-data-entry></app-full-data-entry>
-    <app-general></app-general>
-    <app-person></app-person>
-    <app-patient></app-patient>
-    <app-disease></app-disease>
-    <app-event></app-event>
-    <app-product></app-product>
-    <app-lab-data></app-lab-data>
-    <app-comments></app-comments>
-    <app-literature></app-literature>
+    <div class="container-fluid">
+      <div class="input-group my-group" style="margin-bottom: 10px;">
+        <label>Languages</label>
+        <select id="lunch" class="selectpicker form-control" data-live-search="true" title="Please select an option ...">
+        <option *ngFor="let languages of alpha3Languages">{{languages}}</option>
+        </select>
+      </div>
+      <div class="panel-group" id="fullCaseDataView">
+        <div class="panel panel-default">
+          <div class="panel-heading header">
+            <h4 class="panel-title">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#fullCaseDataView" href="#fullCaseDataViewTab">
+                Full Case Data View
+              </a>
+            </h4>
+          </div>
+          <div id="fullCaseDataViewTab" class="panel-collapse collapse">
+            <div class="panel-body" style="padding: 15px 0;">
+
+              <app-full-data-entry></app-full-data-entry>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel-group" id="caseDetails">
+        <div class="panel panel-default">
+          <div class="panel-heading header">
+            <h4 class="panel-title">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#caseDetails" href="#caseDetailsTab">
+                Case Details
+              </a>
+            </h4>
+          </div>
+          <div id="caseDetailsTab" class="panel-collapse collapse">
+            <div class="panel-body" style="padding: 15px 0;">
+              <app-general></app-general>
+              <!-- <app-person></app-person> -->
+              <!-- <app-investigator></app-investigator> -->
+              <app-patient></app-patient>
+              <app-disease></app-disease>
+              <app-event></app-event>
+              <app-product></app-product>
+              <app-lab-data></app-lab-data>
+              <app-comments></app-comments>
+              <app-literature></app-literature>
+              <app-case-additional></app-case-additional>
+              <app-affiliate-reporting></app-affiliate-reporting>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </header>
