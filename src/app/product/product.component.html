@@ -270,35 +270,30 @@
                   <div class="row">
                     <div class="col-md-12">
                       <div class="input-group">
-                        <label>Product Type</label>
-                        <label class="radio-inline">
-                          <input type="radio" value="">Drug
-                        </label>
-                        <label class="radio-inline">
-                          <input type="radio" value="">Vaccine
-                        </label>
-                        <label class="radio-inline">
-                          <input type="radio" value="">Device
-                        </label>
-                        <label class="radio-inline">
-                          <input type="radio" value="">Cosemtic
-                        </label>
-                        <label class="radio-inline">
-                          <input type="radio" value="">Combination
-                        </label>
+                        <label>Product Category</label>
+                        <div class="input-group my-group">
+                          <label>&nbsp;</label>
+                          <select id="lunch" class="selectpicker form-control" data-live-search="true" title="Please select an option ...">
+                              <option>Drug</option>
+                              <option>Vaccine</option>
+                              <option>Device</option>
+                              <option>Cosemtic</option>
+                              <option>Combination</option>
+                          </select>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-md-6">
                       <div class="input-group my-group">
-                        <label>Product Flag</label>
+                        <label>Product Type</label>
                         <select id="lunch" class="selectpicker form-control" data-live-search="true"
                           title="Please select an option ...">
-                          <option>Option 1</option>
-                          <option>Option 2</option>
-                          <option>Option 3</option>
-                          <option>Option 4</option>
+                          <option>Suspect</option>
+                          <option>Interacting</option>
+                          <option>Concomitant</option>
+                          <option>Drug not administrate</option>
                         </select>
                       </div>
                     </div>
@@ -327,7 +322,7 @@
                     <div class="col-md-6">
                       <div class="input-group">
                         <label>Preferred Product Description</label>
-                        <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                        <input type="text" readonly required class="form-control" aria-describedby="basic-addon1">
                       </div>
                     </div>
                     <div class="col-md-6">
@@ -426,7 +421,7 @@
                     </div>
                   </div>
 
-                  <div class="row" stylw="margin-top:10px;">
+                  <!-- <div class="row" stylw="margin-top:10px;">
                     <div class="col-md-12">
                       <table class="table table-bordered" style="margin-top: 10px;">
                         <thead>
@@ -476,7 +471,7 @@
                         </li>
                       </ul>
                     </div>
-                  </div>
+                  </div> -->
 
                   <div class="row">
                     <div class="col-md-12">
@@ -642,7 +637,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="panel-group" id="reviewDetails">
+                      <!-- <div class="panel-group" id="reviewDetails">
                         <div class="panel panel-default">
                           <div class="panel-heading">
                             <h4 class="panel-title">
@@ -684,7 +679,7 @@
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </div> -->
                       <div class="panel-group" id="dosageRegimen">
                         <div class="panel panel-default">
                           <div class="panel-heading">
@@ -698,7 +693,7 @@
                             <div class="panel-body">
                               <div class="row">
                                 <div class="col-md-6">
-                                  <div class="input-group my-group">
+                                  <!-- <div class="input-group my-group">
                                     <label>Form Of Admin</label>
                                     <select id="lunch" class="selectpicker form-control" data-live-search="true"
                                       title="Please select an option ...">
@@ -707,7 +702,7 @@
                                       <option>Option 3</option>
                                       <option>Option 4</option>
                                     </select>
-                                  </div>
+                                  </div> -->
                                   <div class="row">
                                     <div class="col-md-6">
                                       <div class="input-group">
@@ -814,7 +809,7 @@
                                     <label>Form Of Admin Text</label>
                                     <input type="text" required class="form-control" aria-describedby="basic-addon1">
                                   </div>
-                                  <div class="input-group my-group">
+                                  <!-- <div class="input-group my-group">
                                     <label>Parent's Route Of Admin</label>
                                     <select id="lunch" class="selectpicker form-control" data-live-search="true"
                                       title="Please select an option ...">
@@ -823,11 +818,11 @@
                                       <option>Option 3</option>
                                       <option>Option 4</option>
                                     </select>
-                                  </div>
-                                  <div class="input-group">
+                                  </div> -->
+                                  <!-- <div class="input-group">
                                     <label>Route Of Admin Text</label>
                                     <input type="text" required class="form-control" aria-describedby="basic-addon1">
-                                  </div>
+                                  </div> -->
                                   <div class="row">
                                     <div class="col-md-6">
                                       <div class="input-group">
@@ -1019,6 +1014,15 @@
                                           <div class="input-group">
                                             <label>Parent Route Of Admin Text</label>
                                             <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                                            <div class="input-group my-group">
+                                              <label>&nbsp;</label>
+                                              <select id="lunch" class="selectpicker form-control" data-live-search="true" title="Please select an option ...">
+                                                  <option>Option 1</option>
+                                                  <option>Option 2</option>
+                                                  <option>Option 3</option>
+                                                  <option>Option 4</option>
+                                              </select>
+                                            </div>
                                           </div>
                                         </div>
                                       </div>
@@ -1051,8 +1055,17 @@
                                       <div class="row">
                                         <div class="col-md-12">
                                           <div class="input-group">
-                                            <label>Pharmaceutical Dose Form Admin Text</label>
+                                            <label>Pharmaceutical Dose Form Admin</label>
                                             <input type="text" required class="form-control" aria-describedby="basic-addon1">
+                                            <div class="input-group my-group">
+                                              <label>&nbsp;</label>
+                                              <select id="lunch" class="selectpicker form-control" data-live-search="true" title="Please select an option ...">
+                                                  <option>Option 1</option>
+                                                  <option>Option 2</option>
+                                                  <option>Option 3</option>
+                                                  <option>Option 4</option>
+                                              </select>
+                                            </div>
                                           </div>
                                         </div>
                                       </div>
@@ -2868,6 +2881,28 @@
                           <div id="dosageProdTab" class="panel-collapse collapse">
                             <div class="panel-body">
                               <div class="row">
+                                  <div class="col-md-6">
+                                    <div class="input-group">
+                                      <label>Therapy Start Date</label>
+                                      <input type="date" required class="form-control"
+                                        aria-describedby="basic-addon1">
+                                    </div>
+                                    <div class="input-group">
+                                      <label>Total Duration</label>
+                                      <input type=“text” required class="form-control" aria-describedby="basic-addon1">
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div class="input-group">
+                                      <label>Therapy End Date</label>
+                                      <input type="date" required class="form-control"
+                                        aria-describedby="basic-addon1">
+                                    </div>
+                                    <div class="input-group">
+                                      <label>Lot No</label>
+                                      <input type=“text” required class="form-control" aria-describedby="basic-addon1">
+                                    </div>
+                                  </div>
                                 <div class="col-md-6">
                                   <div class="input-group">
                                     <label>Unit Dose</label>
@@ -2974,6 +3009,57 @@
                                     </select>
                                   </div>
                                 </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel-group" id="dosageForm">
+                        <div class="panel panel-default">
+                          <div class="panel-heading">
+                            <h4 class="panel-title">
+                              <a class="accordion-toggle" data-toggle="collapse" data-parent="#dosageForm" href="#dosageFormTab">
+                                Dosage Form
+                              </a>
+                            </h4>
+                          </div>
+                          <div id="dosageFormTab" class="panel-collapse collapse">
+                            <div class="panel-body">
+                              <div class="row">
+                                  <div class="col-md-12">
+                                    <div class="input-group my-group">
+                                      <label>Drug</label>
+                                      <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                                        title="Please select an option ...">
+                                        <option>MPID</option>
+                                        <option>PHID</option>
+                                      </select>
+                                    </div>
+                                    <div class="input-group my-group">
+                                      <label>Drug Version</label>
+                                      <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                                        title="Please select an option ...">
+                                        <option>MPID Version</option>
+                                        <option>PHID Version</option>
+                                      </select>
+                                    </div>
+                                    <div class="input-group my-group">
+                                      <label>&nbsp;</label>
+                                      <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                                        title="Please select an option ...">
+                                        <option>Patient</option>
+                                        <option>Parent</option>
+                                      </select>
+                                    </div>
+                                    <div class="input-group my-group">
+                                      <label>Current/Past</label>
+                                      <select id="lunch" class="selectpicker form-control" data-live-search="true"
+                                        title="Please select an option ...">
+                                        <option>Current</option>
+                                        <option>Past</option>
+                                      </select>
+                                    </div>
+                                  </div>
                               </div>
                             </div>
                           </div>
